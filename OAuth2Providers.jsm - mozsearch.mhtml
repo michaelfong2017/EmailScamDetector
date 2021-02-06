@@ -1,0 +1,2691 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://searchfox.org/comm-central/source/mailnews/base/src/OAuth2Providers.jsm#1
+Subject: OAuth2Providers.jsm - mozsearch
+Date: Sat, 6 Feb 2021 15:46:46 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--mxmgcRIi5bLpbeiJ8bAlpefOcW3ciYm8H0BhCh0yDN----"
+
+
+------MultipartBoundary--mxmgcRIi5bLpbeiJ8bAlpefOcW3ciYm8H0BhCh0yDN----
+Content-Type: text/html
+Content-ID: <frame-FB99DD5DB28A1F4E991BF5C01F3EE805@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://searchfox.org/comm-central/source/mailnews/base/src/OAuth2Providers.jsm#1
+
+<!DOCTYPE html><html lang=3D"en-US" style=3D"--cov-hit-unhovered-color: #d1=
+e5f0; --cov-miss-unhovered-color: #f4a582;"><head><meta http-equiv=3D"Conte=
+nt-Type" content=3D"text/html; charset=3DUTF-8">
+ =20
+  <link href=3D"https://searchfox.org/static/icons/search.png" rel=3D"short=
+cut icon">
+  <title>OAuth2Providers.jsm - mozsearch</title>
+  <link href=3D"https://searchfox.org/static/css/mozsearch.css" rel=3D"styl=
+esheet" type=3D"text/css" media=3D"screen">
+  <link href=3D"https://searchfox.org/static/css/icons.css" rel=3D"styleshe=
+et" type=3D"text/css" media=3D"screen">
+  <link href=3D"https://searchfox.org/static/css/filter.css" rel=3D"stylesh=
+eet" type=3D"text/css" media=3D"screen">
+  <link href=3D"https://searchfox.org/static/css/xcode.css" rel=3D"styleshe=
+et" type=3D"text/css" media=3D"screen">
+</head>
+
+<body class=3D"old-rev">
+  <div id=3D"fixed-header">
+  <form method=3D"get" action=3D"https://searchfox.org/comm-central/search"=
+ id=3D"basic_search" class=3D"search-box">
+    <fieldset>
+      <div id=3D"search-box" class=3D"h-flex-container" role=3D"group">
+        <div id=3D"query-section">
+          <label for=3D"query" class=3D"query_label visually-hidden">Find</=
+label>
+          <input type=3D"text" name=3D"q" value=3D"" maxlength=3D"2048" id=
+=3D"query" accesskey=3D"s" title=3D"Search" placeholder=3D"Search comm-cent=
+ral" autocomplete=3D"off">
+          <div class=3D"zero-size-container">
+            <div class=3D"bubble" id=3D"query-bubble">
+            </div>
+          </div>
+          <section id=3D"spinner"></section>
+        </div>
+        <div id=3D"option-section" class=3D"v-flex-container">
+          <label for=3D"case">
+            <input type=3D"checkbox" name=3D"case" id=3D"case" class=3D"opt=
+ion-checkbox" value=3D"true" accesskey=3D"c"><span class=3D"access-key">C</=
+span>ase-sensitive
+          </label>
+          <label for=3D"regexp">
+            <input type=3D"checkbox" name=3D"regexp" id=3D"regexp" class=3D=
+"option-checkbox" value=3D"true" accesskey=3D"r"><span class=3D"access-key"=
+>R</span>egexp search
+          </label>
+        </div>
+        <div id=3D"path-section">
+          <label for=3D"query" class=3D"query_label visually-hidden">Path</=
+label>
+          <input type=3D"text" name=3D"path" value=3D"" maxlength=3D"2048" =
+id=3D"path" accesskey=3D"p" title=3D"Path" placeholder=3D"Path filter (supp=
+orts globbing and ^, $)" autocomplete=3D"off">
+          <div class=3D"zero-size-container">
+            <div class=3D"bubble" id=3D"path-bubble">
+            </div>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+    <input type=3D"submit" value=3D"Search" class=3D"visually-hidden">
+    <div id=3D"revision">
+      <span id=3D"rev-id">Showing <a href=3D"https://searchfox.org/comm-cen=
+tral/commit/19d26c50df73a50d1d26fc568f75f614dec9ddf5">19d26c50</a>:</span>
+      <span id=3D"rev-desc">Bug <a href=3D"https://bugzilla.mozilla.org/sho=
+w_bug.cgi?id=3D1691007">1691007</a> - Port bug <a href=3D"https://bugzilla.=
+mozilla.org/show_bug.cgi?id=3D1690757">1690757</a>: Add a compiler-rt task =
+for aarch64 linux. rs=3Dbustage-fix</span>
+    </div>
+  </form>
+  </div>
+  <div id=3D"scrolling">
+  <div id=3D"content" class=3D"content source-listing not-diff" data-no-res=
+ults=3D"No results for current query.">
+<div class=3D"breadcrumbs"><a href=3D"https://searchfox.org/comm-central/so=
+urce/">comm-central</a><span class=3D"path-separator">/</span><a href=3D"ht=
+tps://searchfox.org/comm-central/source/mailnews">mailnews</a><span class=
+=3D"path-separator">/</span><a href=3D"https://searchfox.org/comm-central/s=
+ource/mailnews/base">base</a><span class=3D"path-separator">/</span><a href=
+=3D"https://searchfox.org/comm-central/source/mailnews/base/src">src</a><sp=
+an class=3D"path-separator">/</span><a href=3D"https://searchfox.org/comm-c=
+entral/source/mailnews/base/src/OAuth2Providers.jsm">OAuth2Providers.jsm</a=
+></div>
+<div class=3D"panel" id=3D"panel">
+  <button id=3D"panel-toggle">
+    <span class=3D"navpanel-icon expanded" aria-hidden=3D"false"></span>
+    Navigation
+  </button>
+  <section id=3D"panel-content" aria-expanded=3D"true" aria-hidden=3D"false=
+">
+  <label class=3D"panel-accel"><input type=3D"checkbox" id=3D"panel-accel-e=
+nable" checked=3D"checked">Enable keyboard shortcuts</label>
+  <h4>Revision control</h4>
+  <ul>
+  <li>
+  <a href=3D"https://searchfox.org/comm-central/rev/19d26c50df73a50d1d26fc5=
+68f75f614dec9ddf5/mailnews/base/src/OAuth2Providers.jsm#1" title=3D"Permali=
+nk" class=3D"icon" data-update-link=3D"#{}" data-link=3D"/comm-central/rev/=
+19d26c50df73a50d1d26fc568f75f614dec9ddf5/mailnews/base/src/OAuth2Providers.=
+jsm">Permalink <span class=3D"accel">Y</span><button class=3D"icon copy" ti=
+tle=3D"Copy to clipboard"></button></a>
+  </li>
+  <li>
+  <a href=3D"https://hg.mozilla.org/comm-central/log/tip/mailnews/base/src/=
+OAuth2Providers.jsm" title=3D"Log" class=3D"icon">Log <span class=3D"accel"=
+>L</span><button class=3D"icon copy" title=3D"Copy to clipboard"></button><=
+/a>
+  </li>
+  <li>
+  <a href=3D"https://hg.mozilla.org/comm-central/raw-file/tip/mailnews/base=
+/src/OAuth2Providers.jsm" title=3D"Raw" class=3D"icon">Raw <span class=3D"a=
+ccel">R</span><button class=3D"icon copy" title=3D"Copy to clipboard"></but=
+ton></a>
+  </li>
+  <li>
+  <a title=3D"Blame" class=3D"icon">Blame</a>
+  </li>
+  </ul>
+  <h4>Other Tools</h4>
+  <ul>
+  <li>
+  <a href=3D"https://hg.mozilla.org/comm-central/file/tip/mailnews/base/src=
+/OAuth2Providers.jsm#l1" title=3D"HG Web" class=3D"icon" data-update-link=
+=3D"#l{}" data-link=3D"https://hg.mozilla.org/comm-central/file/tip/mailnew=
+s/base/src/OAuth2Providers.jsm">HG Web</a>
+  </li>
+  </ul>
+  </section>
+</div>
+<section class=3D"info-boxes" id=3D"info-boxes-container">
+</section>
+<div id=3D"file" class=3D"file" role=3D"table">
+<div role=3D"row" id=3D"line-1" class=3D"source-line-with-number highlighte=
+d"><div id=3D"1" class=3D"goto"></div>
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"6423d3829a=
+81205ab4db2f7531ba6a7f578e309f#mailnews/base/util/OAuth2Providers.jsm#1" ro=
+le=3D"button" aria-label=3D"new hash 1" aria-expanded=3D"false"></div></div=
+>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"1"></div>
+  <code role=3D"cell" class=3D"source-line"><span class=3D"syn_comment">/* =
+This Source Code Form is subject to the terms of the Mozilla Public</span>
+</code>
+</div>
+<div role=3D"row" id=3D"line-2" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"6423d3829a=
+81205ab4db2f7531ba6a7f578e309f#mailnews/base/util/OAuth2Providers.jsm#2" ro=
+le=3D"button" aria-label=3D"same hash 1" aria-expanded=3D"false"></div></di=
+v>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"2"></div>
+  <code role=3D"cell" class=3D"source-line"><span class=3D"syn_comment"> * =
+License, v. 2.0. If a copy of the MPL was not distributed with this file,</=
+span>
+</code>
+</div>
+<div role=3D"row" id=3D"line-3" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"6423d3829a=
+81205ab4db2f7531ba6a7f578e309f#mailnews/base/util/OAuth2Providers.jsm#3" ro=
+le=3D"button" aria-label=3D"same hash 1" aria-expanded=3D"false"></div></di=
+v>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"3"></div>
+  <code role=3D"cell" class=3D"source-line"><span class=3D"syn_comment"> * =
+You can obtain one at <a href=3D"http://mozilla.org/MPL/2.0/">http://mozill=
+a.org/MPL/2.0/</a>. */</span>
+</code>
+</div>
+<div role=3D"row" id=3D"line-4" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"6423d3829a=
+81205ab4db2f7531ba6a7f578e309f#mailnews/base/util/OAuth2Providers.jsm#4" ro=
+le=3D"button" aria-label=3D"same hash 1" aria-expanded=3D"false"></div></di=
+v>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"4"></div>
+  <code role=3D"cell" class=3D"source-line">
+</code>
+</div>
+<div role=3D"row" id=3D"line-5" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"6423d3829a=
+81205ab4db2f7531ba6a7f578e309f#mailnews/base/util/OAuth2Providers.jsm#5" ro=
+le=3D"button" aria-label=3D"same hash 1" aria-expanded=3D"false"></div></di=
+v>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"5"></div>
+  <code role=3D"cell" class=3D"source-line"><span class=3D"syn_comment">/**=
+</span>
+</code>
+</div>
+<div role=3D"row" id=3D"line-6" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"6423d3829a=
+81205ab4db2f7531ba6a7f578e309f#mailnews/base/util/OAuth2Providers.jsm#6" ro=
+le=3D"button" aria-label=3D"same hash 1" aria-expanded=3D"false"></div></di=
+v>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"6"></div>
+  <code role=3D"cell" class=3D"source-line"><span class=3D"syn_comment"> * =
+Details of supported OAuth2 Providers.</span>
+</code>
+</div>
+<div role=3D"row" id=3D"line-7" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"6423d3829a=
+81205ab4db2f7531ba6a7f578e309f#mailnews/base/util/OAuth2Providers.jsm#7" ro=
+le=3D"button" aria-label=3D"same hash 1" aria-expanded=3D"false"></div></di=
+v>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"7"></div>
+  <code role=3D"cell" class=3D"source-line"><span class=3D"syn_comment"> */=
+</span>
+</code>
+</div>
+<div role=3D"row" id=3D"line-8" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"6423d3829a=
+81205ab4db2f7531ba6a7f578e309f#mailnews/base/util/OAuth2Providers.jsm#8" ro=
+le=3D"button" aria-label=3D"same hash 1" aria-expanded=3D"false"></div></di=
+v>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"8"></div>
+  <code role=3D"cell" class=3D"source-line"><span class=3D"syn_reserved">va=
+r</span> <span class=3D"syn_def" data-symbols=3D"#EXPORTED_SYMBOLS" data-i=
+=3D"0">EXPORTED_SYMBOLS</span> =3D [<span class=3D"syn_string">"OAuth2Provi=
+ders"</span>];
+</code>
+</div>
+<div role=3D"row" id=3D"line-9" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"6423d3829a=
+81205ab4db2f7531ba6a7f578e309f#mailnews/base/util/OAuth2Providers.jsm#9" ro=
+le=3D"button" aria-label=3D"same hash 1" aria-expanded=3D"false"></div></di=
+v>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"9"></div>
+  <code role=3D"cell" class=3D"source-line">
+</code>
+</div>
+<div role=3D"row" id=3D"line-10" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c2" data-blame=3D"aed31b2fbe=
+ba0d4688988f45b220c7d06e0f6c34#mailnews/base/util/OAuth2Providers.jsm#10" r=
+ole=3D"button" aria-label=3D"new hash 2" aria-expanded=3D"false"></div></di=
+v>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"10"></div>
+  <code role=3D"cell" class=3D"source-line"><span class=3D"syn_comment">/**=
+</span>
+</code>
+</div>
+<div role=3D"row" id=3D"line-11" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c2" data-blame=3D"aed31b2fbe=
+ba0d4688988f45b220c7d06e0f6c34#mailnews/base/util/OAuth2Providers.jsm#11" r=
+ole=3D"button" aria-label=3D"same hash 2" aria-expanded=3D"false"></div></d=
+iv>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"11"></div>
+  <code role=3D"cell" class=3D"source-line"><span class=3D"syn_comment"> * =
+Map of hostnames to [issuer, scope].</span>
+</code>
+</div>
+<div role=3D"row" id=3D"line-12" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c2" data-blame=3D"aed31b2fbe=
+ba0d4688988f45b220c7d06e0f6c34#mailnews/base/util/OAuth2Providers.jsm#12" r=
+ole=3D"button" aria-label=3D"same hash 2" aria-expanded=3D"false"></div></d=
+iv>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"12"></div>
+  <code role=3D"cell" class=3D"source-line"><span class=3D"syn_comment"> */=
+</span>
+</code>
+</div>
+<div role=3D"row" id=3D"line-13" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"9d168e83df=
+e85ebce604df37b3a11126ad74e8aa#mailnews/base/util/OAuth2Providers.jsm#13" r=
+ole=3D"button" aria-label=3D"new hash 3" aria-expanded=3D"false"></div></di=
+v>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"13"></div>
+  <code role=3D"cell" class=3D"source-line"><span class=3D"syn_reserved">va=
+r</span> <span class=3D"syn_def" data-symbols=3D"#kHostnames" data-i=3D"1">=
+kHostnames</span> =3D <span class=3D"syn_reserved">new</span> <span data-sy=
+mbols=3D"#Map" data-i=3D"2">Map</span>([
+</code>
+</div>
+<div role=3D"row" id=3D"line-14" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c2" data-blame=3D"d2ba0bd9ad=
+944378108c790d61cd36211a2315d5#mailnews/base/util/OAuth2Providers.jsm#14" r=
+ole=3D"button" aria-label=3D"new hash 4" aria-expanded=3D"false"></div></di=
+v>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"14"></div>
+  <code role=3D"cell" class=3D"source-line">  [<span class=3D"syn_string">"=
+imap.googlemail.com"</span>, [<span class=3D"syn_string">"accounts.google.c=
+om"</span>, <span class=3D"syn_string">"<a href=3D"https://mail.google.com/=
+">https://mail.google.com/</a>"</span>]],
+</code>
+</div>
+<div role=3D"row" id=3D"line-15" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c2" data-blame=3D"d2ba0bd9ad=
+944378108c790d61cd36211a2315d5#mailnews/base/util/OAuth2Providers.jsm#15" r=
+ole=3D"button" aria-label=3D"same hash 4" aria-expanded=3D"false"></div></d=
+iv>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"15"></div>
+  <code role=3D"cell" class=3D"source-line">  [<span class=3D"syn_string">"=
+smtp.googlemail.com"</span>, [<span class=3D"syn_string">"accounts.google.c=
+om"</span>, <span class=3D"syn_string">"<a href=3D"https://mail.google.com/=
+">https://mail.google.com/</a>"</span>]],
+</code>
+</div>
+<div role=3D"row" id=3D"line-16" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"13d0ecfc1c=
+39a06fc5638eedec84d47cddcc6bef#mailnews/base/util/OAuth2Providers.jsm#14" r=
+ole=3D"button" aria-label=3D"new hash 5" aria-expanded=3D"false"></div></di=
+v>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"16"></div>
+  <code role=3D"cell" class=3D"source-line">  [<span class=3D"syn_string">"=
+pop.googlemail.com"</span>, [<span class=3D"syn_string">"accounts.google.co=
+m"</span>, <span class=3D"syn_string">"<a href=3D"https://mail.google.com/"=
+>https://mail.google.com/</a>"</span>]],
+</code>
+</div>
+<div role=3D"row" id=3D"line-17" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c2" data-blame=3D"d2ba0bd9ad=
+944378108c790d61cd36211a2315d5#mailnews/base/util/OAuth2Providers.jsm#16" r=
+ole=3D"button" aria-label=3D"new hash 4" aria-expanded=3D"false"></div></di=
+v>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"17"></div>
+  <code role=3D"cell" class=3D"source-line">  [<span class=3D"syn_string">"=
+imap.gmail.com"</span>, [<span class=3D"syn_string">"accounts.google.com"</=
+span>, <span class=3D"syn_string">"<a href=3D"https://mail.google.com/">htt=
+ps://mail.google.com/</a>"</span>]],
+</code>
+</div>
+<div role=3D"row" id=3D"line-18" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c2" data-blame=3D"d2ba0bd9ad=
+944378108c790d61cd36211a2315d5#mailnews/base/util/OAuth2Providers.jsm#17" r=
+ole=3D"button" aria-label=3D"same hash 4" aria-expanded=3D"false"></div></d=
+iv>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"18"></div>
+  <code role=3D"cell" class=3D"source-line">  [<span class=3D"syn_string">"=
+smtp.gmail.com"</span>, [<span class=3D"syn_string">"accounts.google.com"</=
+span>, <span class=3D"syn_string">"<a href=3D"https://mail.google.com/">htt=
+ps://mail.google.com/</a>"</span>]],
+</code>
+</div>
+<div role=3D"row" id=3D"line-19" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"13d0ecfc1c=
+39a06fc5638eedec84d47cddcc6bef#mailnews/base/util/OAuth2Providers.jsm#17" r=
+ole=3D"button" aria-label=3D"new hash 5" aria-expanded=3D"false"></div></di=
+v>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"19"></div>
+  <code role=3D"cell" class=3D"source-line">  [<span class=3D"syn_string">"=
+pop.gmail.com"</span>, [<span class=3D"syn_string">"accounts.google.com"</s=
+pan>, <span class=3D"syn_string">"<a href=3D"https://mail.google.com/">http=
+s://mail.google.com/</a>"</span>]],
+</code>
+</div>
+<div role=3D"row" id=3D"line-20" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c2" data-blame=3D"63e7615fba=
+239c651a6a1703b3adc9ef6bab6cfe#%#20" role=3D"button" aria-label=3D"new hash=
+ 6" aria-expanded=3D"false"></div></div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"20"></div>
+  <code role=3D"cell" class=3D"source-line">  [
+</code>
+</div>
+<div role=3D"row" id=3D"line-21" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c2" data-blame=3D"63e7615fba=
+239c651a6a1703b3adc9ef6bab6cfe#%#21" role=3D"button" aria-label=3D"same has=
+h 6" aria-expanded=3D"false"></div></div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"21"></div>
+  <code role=3D"cell" class=3D"source-line">    <span class=3D"syn_string">=
+"www.googleapis.com"</span>,
+</code>
+</div>
+<div role=3D"row" id=3D"line-22" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c2" data-blame=3D"63e7615fba=
+239c651a6a1703b3adc9ef6bab6cfe#%#22" role=3D"button" aria-label=3D"same has=
+h 6" aria-expanded=3D"false"></div></div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"22"></div>
+  <code role=3D"cell" class=3D"source-line">    [<span class=3D"syn_string"=
+>"accounts.google.com"</span>, <span class=3D"syn_string">"<a href=3D"https=
+://www.googleapis.com/auth/carddav">https://www.googleapis.com/auth/carddav=
+</a>"</span>],
+</code>
+</div>
+<div role=3D"row" id=3D"line-23" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c2" data-blame=3D"63e7615fba=
+239c651a6a1703b3adc9ef6bab6cfe#%#23" role=3D"button" aria-label=3D"same has=
+h 6" aria-expanded=3D"false"></div></div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"23"></div>
+  <code role=3D"cell" class=3D"source-line">  ],
+</code>
+</div>
+<div role=3D"row" id=3D"line-24" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"392eb34e8a=
+124f6c7e76e5027ae2cee5ae9c6b97#mailnews/base/util/OAuth2Providers.jsm#18" r=
+ole=3D"button" aria-label=3D"new hash 7" aria-expanded=3D"false"></div></di=
+v>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"24"></div>
+  <code role=3D"cell" class=3D"source-line">
+</code>
+</div>
+<div role=3D"row" id=3D"line-25" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"392eb34e8a=
+124f6c7e76e5027ae2cee5ae9c6b97#mailnews/base/util/OAuth2Providers.jsm#19" r=
+ole=3D"button" aria-label=3D"same hash 7" aria-expanded=3D"false"></div></d=
+iv>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"25"></div>
+  <code role=3D"cell" class=3D"source-line">  [<span class=3D"syn_string">"=
+imap.mail.ru"</span>, [<span class=3D"syn_string">"o2.mail.ru"</span>, <spa=
+n class=3D"syn_string">"mail.imap"</span>]],
+</code>
+</div>
+<div role=3D"row" id=3D"line-26" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"392eb34e8a=
+124f6c7e76e5027ae2cee5ae9c6b97#mailnews/base/util/OAuth2Providers.jsm#20" r=
+ole=3D"button" aria-label=3D"same hash 7" aria-expanded=3D"false"></div></d=
+iv>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"26"></div>
+  <code role=3D"cell" class=3D"source-line">  [<span class=3D"syn_string">"=
+smtp.mail.ru"</span>, [<span class=3D"syn_string">"o2.mail.ru"</span>, <spa=
+n class=3D"syn_string">"mail.imap"</span>]],
+</code>
+</div>
+<div role=3D"row" id=3D"line-27" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c2" data-blame=3D"727a171cac=
+b026a50cd099864688f0db2b366320#mailnews/base/util/OAuth2Providers.jsm#19" r=
+ole=3D"button" aria-label=3D"new hash 8" aria-expanded=3D"false"></div></di=
+v>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"27"></div>
+  <code role=3D"cell" class=3D"source-line">
+</code>
+</div>
+<div role=3D"row" id=3D"line-28" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"6423dd1c74=
+6854c565b946bc0d274a0a3cd43178#mailnews/base/util/OAuth2Providers.jsm#20" r=
+ole=3D"button" aria-label=3D"new hash 9" aria-expanded=3D"false"></div></di=
+v>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"28"></div>
+  <code role=3D"cell" class=3D"source-line">  [<span class=3D"syn_string">"=
+imap.yandex.com"</span>, [<span class=3D"syn_string">"oauth.yandex.com"</sp=
+an>, <span class=3D"syn_string">"mail:imap_full"</span>]],
+</code>
+</div>
+<div role=3D"row" id=3D"line-29" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"6423dd1c74=
+6854c565b946bc0d274a0a3cd43178#mailnews/base/util/OAuth2Providers.jsm#21" r=
+ole=3D"button" aria-label=3D"same hash 9" aria-expanded=3D"false"></div></d=
+iv>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"29"></div>
+  <code role=3D"cell" class=3D"source-line">  [<span class=3D"syn_string">"=
+smtp.yandex.com"</span>, [<span class=3D"syn_string">"oauth.yandex.com"</sp=
+an>, <span class=3D"syn_string">"mail:smtp"</span>]],
+</code>
+</div>
+<div role=3D"row" id=3D"line-30" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"6423dd1c74=
+6854c565b946bc0d274a0a3cd43178#mailnews/base/util/OAuth2Providers.jsm#22" r=
+ole=3D"button" aria-label=3D"same hash 9" aria-expanded=3D"false"></div></d=
+iv>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"30"></div>
+  <code role=3D"cell" class=3D"source-line">
+</code>
+</div>
+<div role=3D"row" id=3D"line-31" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c2" data-blame=3D"727a171cac=
+b026a50cd099864688f0db2b366320#mailnews/base/util/OAuth2Providers.jsm#20" r=
+ole=3D"button" aria-label=3D"new hash 8" aria-expanded=3D"false"></div></di=
+v>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"31"></div>
+  <code role=3D"cell" class=3D"source-line">  [<span class=3D"syn_string">"=
+imap.mail.yahoo.com"</span>, [<span class=3D"syn_string">"login.yahoo.com"<=
+/span>, <span class=3D"syn_string">"mail-w"</span>]],
+</code>
+</div>
+<div role=3D"row" id=3D"line-32" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"13d0ecfc1c=
+39a06fc5638eedec84d47cddcc6bef#mailnews/base/util/OAuth2Providers.jsm#26" r=
+ole=3D"button" aria-label=3D"new hash 5" aria-expanded=3D"false"></div></di=
+v>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"32"></div>
+  <code role=3D"cell" class=3D"source-line">  [<span class=3D"syn_string">"=
+pop.mail.yahoo.com"</span>, [<span class=3D"syn_string">"login.yahoo.com"</=
+span>, <span class=3D"syn_string">"mail-w"</span>]],
+</code>
+</div>
+<div role=3D"row" id=3D"line-33" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c2" data-blame=3D"727a171cac=
+b026a50cd099864688f0db2b366320#mailnews/base/util/OAuth2Providers.jsm#21" r=
+ole=3D"button" aria-label=3D"new hash 8" aria-expanded=3D"false"></div></di=
+v>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"33"></div>
+  <code role=3D"cell" class=3D"source-line">  [<span class=3D"syn_string">"=
+smtp.mail.yahoo.com"</span>, [<span class=3D"syn_string">"login.yahoo.com"<=
+/span>, <span class=3D"syn_string">"mail-w"</span>]],
+</code>
+</div>
+<div role=3D"row" id=3D"line-34" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c2" data-blame=3D"727a171cac=
+b026a50cd099864688f0db2b366320#mailnews/base/util/OAuth2Providers.jsm#22" r=
+ole=3D"button" aria-label=3D"same hash 8" aria-expanded=3D"false"></div></d=
+iv>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"34"></div>
+  <code role=3D"cell" class=3D"source-line">
+</code>
+</div>
+<div role=3D"row" id=3D"line-35" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c2" data-blame=3D"727a171cac=
+b026a50cd099864688f0db2b366320#mailnews/base/util/OAuth2Providers.jsm#23" r=
+ole=3D"button" aria-label=3D"same hash 8" aria-expanded=3D"false"></div></d=
+iv>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"35"></div>
+  <code role=3D"cell" class=3D"source-line">  [<span class=3D"syn_string">"=
+imap.aol.com"</span>, [<span class=3D"syn_string">"login.aol.com"</span>, <=
+span class=3D"syn_string">"mail-w"</span>]],
+</code>
+</div>
+<div role=3D"row" id=3D"line-36" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"13d0ecfc1c=
+39a06fc5638eedec84d47cddcc6bef#mailnews/base/util/OAuth2Providers.jsm#30" r=
+ole=3D"button" aria-label=3D"new hash 5" aria-expanded=3D"false"></div></di=
+v>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"36"></div>
+  <code role=3D"cell" class=3D"source-line">  [<span class=3D"syn_string">"=
+pop.aol.com"</span>, [<span class=3D"syn_string">"login.aol.com"</span>, <s=
+pan class=3D"syn_string">"mail-w"</span>]],
+</code>
+</div>
+<div role=3D"row" id=3D"line-37" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c2" data-blame=3D"727a171cac=
+b026a50cd099864688f0db2b366320#mailnews/base/util/OAuth2Providers.jsm#24" r=
+ole=3D"button" aria-label=3D"new hash 8" aria-expanded=3D"false"></div></di=
+v>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"37"></div>
+  <code role=3D"cell" class=3D"source-line">  [<span class=3D"syn_string">"=
+smtp.aol.com"</span>, [<span class=3D"syn_string">"login.aol.com"</span>, <=
+span class=3D"syn_string">"mail-w"</span>]],
+</code>
+</div>
+<div role=3D"row" id=3D"line-38" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"ac0d3152e1=
+77f4fe29f72383497989e545f7d1b4#mailnews/base/util/OAuth2Providers.jsm#34" r=
+ole=3D"button" aria-label=3D"new hash 10" aria-expanded=3D"false"></div></d=
+iv>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"38"></div>
+  <code role=3D"cell" class=3D"source-line">
+</code>
+</div>
+<div role=3D"row" id=3D"line-39" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"ac0d3152e1=
+77f4fe29f72383497989e545f7d1b4#mailnews/base/util/OAuth2Providers.jsm#35" r=
+ole=3D"button" aria-label=3D"same hash 10" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"39"></div>
+  <code role=3D"cell" class=3D"source-line">  [
+</code>
+</div>
+<div role=3D"row" id=3D"line-40" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"ac0d3152e1=
+77f4fe29f72383497989e545f7d1b4#mailnews/base/util/OAuth2Providers.jsm#36" r=
+ole=3D"button" aria-label=3D"same hash 10" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"40"></div>
+  <code role=3D"cell" class=3D"source-line">    <span class=3D"syn_string">=
+"outlook.office365.com"</span>,
+</code>
+</div>
+<div role=3D"row" id=3D"line-41" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"ac0d3152e1=
+77f4fe29f72383497989e545f7d1b4#mailnews/base/util/OAuth2Providers.jsm#37" r=
+ole=3D"button" aria-label=3D"same hash 10" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"41"></div>
+  <code role=3D"cell" class=3D"source-line">    [
+</code>
+</div>
+<div role=3D"row" id=3D"line-42" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"ac0d3152e1=
+77f4fe29f72383497989e545f7d1b4#mailnews/base/util/OAuth2Providers.jsm#38" r=
+ole=3D"button" aria-label=3D"same hash 10" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"42"></div>
+  <code role=3D"cell" class=3D"source-line">      <span class=3D"syn_string=
+">"login.microsoftonline.com"</span>,
+</code>
+</div>
+<div role=3D"row" id=3D"line-43" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"ac0d3152e1=
+77f4fe29f72383497989e545f7d1b4#mailnews/base/util/OAuth2Providers.jsm#39" r=
+ole=3D"button" aria-label=3D"same hash 10" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"43"></div>
+  <code role=3D"cell" class=3D"source-line">      <span class=3D"syn_string=
+">"<a href=3D"https://outlook.office365.com/IMAP.AccessAsUser.All">https://=
+outlook.office365.com/IMAP.AccessAsUser.All</a> <a href=3D"https://outlook.=
+office365.com/POP.AccessAsUser.All">https://outlook.office365.com/POP.Acces=
+sAsUser.All</a> <a href=3D"https://outlook.office365.com/SMTP.Send">https:/=
+/outlook.office365.com/SMTP.Send</a> offline_access"</span>,
+</code>
+</div>
+<div role=3D"row" id=3D"line-44" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"ac0d3152e1=
+77f4fe29f72383497989e545f7d1b4#mailnews/base/util/OAuth2Providers.jsm#40" r=
+ole=3D"button" aria-label=3D"same hash 10" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"44"></div>
+  <code role=3D"cell" class=3D"source-line">    ],
+</code>
+</div>
+<div role=3D"row" id=3D"line-45" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"ac0d3152e1=
+77f4fe29f72383497989e545f7d1b4#mailnews/base/util/OAuth2Providers.jsm#41" r=
+ole=3D"button" aria-label=3D"same hash 10" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"45"></div>
+  <code role=3D"cell" class=3D"source-line">  ],
+</code>
+</div>
+<div role=3D"row" id=3D"line-46" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"ac0d3152e1=
+77f4fe29f72383497989e545f7d1b4#mailnews/base/util/OAuth2Providers.jsm#42" r=
+ole=3D"button" aria-label=3D"same hash 10" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"46"></div>
+  <code role=3D"cell" class=3D"source-line">  [
+</code>
+</div>
+<div role=3D"row" id=3D"line-47" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"ac0d3152e1=
+77f4fe29f72383497989e545f7d1b4#mailnews/base/util/OAuth2Providers.jsm#43" r=
+ole=3D"button" aria-label=3D"same hash 10" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"47"></div>
+  <code role=3D"cell" class=3D"source-line">    <span class=3D"syn_string">=
+"smtp.office365.com"</span>,
+</code>
+</div>
+<div role=3D"row" id=3D"line-48" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"ac0d3152e1=
+77f4fe29f72383497989e545f7d1b4#mailnews/base/util/OAuth2Providers.jsm#44" r=
+ole=3D"button" aria-label=3D"same hash 10" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"48"></div>
+  <code role=3D"cell" class=3D"source-line">    [
+</code>
+</div>
+<div role=3D"row" id=3D"line-49" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"ac0d3152e1=
+77f4fe29f72383497989e545f7d1b4#mailnews/base/util/OAuth2Providers.jsm#45" r=
+ole=3D"button" aria-label=3D"same hash 10" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"49"></div>
+  <code role=3D"cell" class=3D"source-line">      <span class=3D"syn_string=
+">"login.microsoftonline.com"</span>,
+</code>
+</div>
+<div role=3D"row" id=3D"line-50" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"ac0d3152e1=
+77f4fe29f72383497989e545f7d1b4#mailnews/base/util/OAuth2Providers.jsm#46" r=
+ole=3D"button" aria-label=3D"same hash 10" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"50"></div>
+  <code role=3D"cell" class=3D"source-line">      <span class=3D"syn_string=
+">"<a href=3D"https://outlook.office365.com/IMAP.AccessAsUser.All">https://=
+outlook.office365.com/IMAP.AccessAsUser.All</a> <a href=3D"https://outlook.=
+office365.com/POP.AccessAsUser.All">https://outlook.office365.com/POP.Acces=
+sAsUser.All</a> <a href=3D"https://outlook.office365.com/SMTP.Send">https:/=
+/outlook.office365.com/SMTP.Send</a> offline_access"</span>,
+</code>
+</div>
+<div role=3D"row" id=3D"line-51" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"ac0d3152e1=
+77f4fe29f72383497989e545f7d1b4#mailnews/base/util/OAuth2Providers.jsm#47" r=
+ole=3D"button" aria-label=3D"same hash 10" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"51"></div>
+  <code role=3D"cell" class=3D"source-line">    ],
+</code>
+</div>
+<div role=3D"row" id=3D"line-52" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"ac0d3152e1=
+77f4fe29f72383497989e545f7d1b4#mailnews/base/util/OAuth2Providers.jsm#48" r=
+ole=3D"button" aria-label=3D"same hash 10" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"52"></div>
+  <code role=3D"cell" class=3D"source-line">  ],
+</code>
+</div>
+<div role=3D"row" id=3D"line-53" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c2" data-blame=3D"6423d3829a=
+81205ab4db2f7531ba6a7f578e309f#mailnews/base/util/OAuth2Providers.jsm#16" r=
+ole=3D"button" aria-label=3D"new hash 1" aria-expanded=3D"false"></div></di=
+v>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"53"></div>
+  <code role=3D"cell" class=3D"source-line">]);
+</code>
+</div>
+<div role=3D"row" id=3D"line-54" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c2" data-blame=3D"6423d3829a=
+81205ab4db2f7531ba6a7f578e309f#mailnews/base/util/OAuth2Providers.jsm#17" r=
+ole=3D"button" aria-label=3D"same hash 1" aria-expanded=3D"false"></div></d=
+iv>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"54"></div>
+  <code role=3D"cell" class=3D"source-line">
+</code>
+</div>
+<div role=3D"row" id=3D"line-55" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"aed31b2fbe=
+ba0d4688988f45b220c7d06e0f6c34#mailnews/base/util/OAuth2Providers.jsm#36" r=
+ole=3D"button" aria-label=3D"new hash 2" aria-expanded=3D"false"></div></di=
+v>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"55"></div>
+  <code role=3D"cell" class=3D"source-line"><span class=3D"syn_comment">/**=
+</span>
+</code>
+</div>
+<div role=3D"row" id=3D"line-56" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"aed31b2fbe=
+ba0d4688988f45b220c7d06e0f6c34#mailnews/base/util/OAuth2Providers.jsm#37" r=
+ole=3D"button" aria-label=3D"same hash 2" aria-expanded=3D"false"></div></d=
+iv>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"56"></div>
+  <code role=3D"cell" class=3D"source-line"><span class=3D"syn_comment"> * =
+Map of issuers to clientId, clientSecret, authorizationEndpoint, tokenEndpo=
+int.</span>
+</code>
+</div>
+<div role=3D"row" id=3D"line-57" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"aed31b2fbe=
+ba0d4688988f45b220c7d06e0f6c34#mailnews/base/util/OAuth2Providers.jsm#38" r=
+ole=3D"button" aria-label=3D"same hash 2" aria-expanded=3D"false"></div></d=
+iv>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"57"></div>
+  <code role=3D"cell" class=3D"source-line"><span class=3D"syn_comment"> * =
+Issuer is a unique string for the organization that a Thunderbird account</=
+span>
+</code>
+</div>
+<div role=3D"row" id=3D"line-58" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"aed31b2fbe=
+ba0d4688988f45b220c7d06e0f6c34#mailnews/base/util/OAuth2Providers.jsm#39" r=
+ole=3D"button" aria-label=3D"same hash 2" aria-expanded=3D"false"></div></d=
+iv>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"58"></div>
+  <code role=3D"cell" class=3D"source-line"><span class=3D"syn_comment"> * =
+was registered at.</span>
+</code>
+</div>
+<div role=3D"row" id=3D"line-59" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"aed31b2fbe=
+ba0d4688988f45b220c7d06e0f6c34#mailnews/base/util/OAuth2Providers.jsm#40" r=
+ole=3D"button" aria-label=3D"same hash 2" aria-expanded=3D"false"></div></d=
+iv>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"59"></div>
+  <code role=3D"cell" class=3D"source-line"><span class=3D"syn_comment"> *<=
+/span>
+</code>
+</div>
+<div role=3D"row" id=3D"line-60" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"aed31b2fbe=
+ba0d4688988f45b220c7d06e0f6c34#mailnews/base/util/OAuth2Providers.jsm#41" r=
+ole=3D"button" aria-label=3D"same hash 2" aria-expanded=3D"false"></div></d=
+iv>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"60"></div>
+  <code role=3D"cell" class=3D"source-line"><span class=3D"syn_comment"> * =
+For the moment these details are hard-coded, since dynamic client</span>
+</code>
+</div>
+<div role=3D"row" id=3D"line-61" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"aed31b2fbe=
+ba0d4688988f45b220c7d06e0f6c34#mailnews/base/util/OAuth2Providers.jsm#42" r=
+ole=3D"button" aria-label=3D"same hash 2" aria-expanded=3D"false"></div></d=
+iv>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"61"></div>
+  <code role=3D"cell" class=3D"source-line"><span class=3D"syn_comment"> * =
+registration is not yet supported. Don't copy these values for your</span>
+</code>
+</div>
+<div role=3D"row" id=3D"line-62" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"aed31b2fbe=
+ba0d4688988f45b220c7d06e0f6c34#mailnews/base/util/OAuth2Providers.jsm#43" r=
+ole=3D"button" aria-label=3D"same hash 2" aria-expanded=3D"false"></div></d=
+iv>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"62"></div>
+  <code role=3D"cell" class=3D"source-line"><span class=3D"syn_comment"> * =
+own application - register one for yourself! This code (and possibly even t=
+he</span>
+</code>
+</div>
+<div role=3D"row" id=3D"line-63" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"aed31b2fbe=
+ba0d4688988f45b220c7d06e0f6c34#mailnews/base/util/OAuth2Providers.jsm#44" r=
+ole=3D"button" aria-label=3D"same hash 2" aria-expanded=3D"false"></div></d=
+iv>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"63"></div>
+  <code role=3D"cell" class=3D"source-line"><span class=3D"syn_comment"> * =
+registration itself) will disappear when this is switched to dynamic</span>
+</code>
+</div>
+<div role=3D"row" id=3D"line-64" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"aed31b2fbe=
+ba0d4688988f45b220c7d06e0f6c34#mailnews/base/util/OAuth2Providers.jsm#45" r=
+ole=3D"button" aria-label=3D"same hash 2" aria-expanded=3D"false"></div></d=
+iv>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"64"></div>
+  <code role=3D"cell" class=3D"source-line"><span class=3D"syn_comment"> * =
+client registration.</span>
+</code>
+</div>
+<div role=3D"row" id=3D"line-65" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"aed31b2fbe=
+ba0d4688988f45b220c7d06e0f6c34#mailnews/base/util/OAuth2Providers.jsm#46" r=
+ole=3D"button" aria-label=3D"same hash 2" aria-expanded=3D"false"></div></d=
+iv>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"65"></div>
+  <code role=3D"cell" class=3D"source-line"><span class=3D"syn_comment"> */=
+</span>
+</code>
+</div>
+<div role=3D"row" id=3D"line-66" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c2" data-blame=3D"38cc5f7e12=
+6af76578cab30d5a5e25fa51325139#mailnews/base/util/OAuth2Providers.jsm#34" r=
+ole=3D"button" aria-label=3D"new hash 11" aria-expanded=3D"false"></div></d=
+iv>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"66"></div>
+  <code role=3D"cell" class=3D"source-line"><span class=3D"syn_reserved">va=
+r</span> <span class=3D"syn_def" data-symbols=3D"#kIssuers" data-i=3D"3">kI=
+ssuers</span> =3D <span class=3D"syn_reserved">new</span> <span data-symbol=
+s=3D"#Map" data-i=3D"4">Map</span>([
+</code>
+</div>
+<div role=3D"row" id=3D"line-67" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"8057711ec3=
+c3711d7b6e3857dc54899bee01f784#mailnews/base/util/OAuth2Providers.jsm#38" r=
+ole=3D"button" aria-label=3D"new hash 12" aria-expanded=3D"false"></div></d=
+iv>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"67"></div>
+  <code role=3D"cell" class=3D"source-line">  [
+</code>
+</div>
+<div role=3D"row" id=3D"line-68" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"8057711ec3=
+c3711d7b6e3857dc54899bee01f784#mailnews/base/util/OAuth2Providers.jsm#39" r=
+ole=3D"button" aria-label=3D"same hash 12" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"68"></div>
+  <code role=3D"cell" class=3D"source-line">    <span class=3D"syn_string">=
+"accounts.google.com"</span>,
+</code>
+</div>
+<div role=3D"row" id=3D"line-69" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"8057711ec3=
+c3711d7b6e3857dc54899bee01f784#mailnews/base/util/OAuth2Providers.jsm#40" r=
+ole=3D"button" aria-label=3D"same hash 12" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"69"></div>
+  <code role=3D"cell" class=3D"source-line">    [
+</code>
+</div>
+<div role=3D"row" id=3D"line-70" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"8057711ec3=
+c3711d7b6e3857dc54899bee01f784#mailnews/base/util/OAuth2Providers.jsm#41" r=
+ole=3D"button" aria-label=3D"same hash 12" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"70"></div>
+  <code role=3D"cell" class=3D"source-line">      <span class=3D"syn_string=
+">"406964657835-aq8lmia8j95dhl1a2bvharmfk3t1hgqj.apps.googleusercontent.com=
+"</span>,
+</code>
+</div>
+<div role=3D"row" id=3D"line-71" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"8057711ec3=
+c3711d7b6e3857dc54899bee01f784#mailnews/base/util/OAuth2Providers.jsm#42" r=
+ole=3D"button" aria-label=3D"same hash 12" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"71"></div>
+  <code role=3D"cell" class=3D"source-line">      <span class=3D"syn_string=
+">"kSmqreRr0qwBWJgbf5Y-PjSU"</span>,
+</code>
+</div>
+<div role=3D"row" id=3D"line-72" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"8057711ec3=
+c3711d7b6e3857dc54899bee01f784#mailnews/base/util/OAuth2Providers.jsm#43" r=
+ole=3D"button" aria-label=3D"same hash 12" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"72"></div>
+  <code role=3D"cell" class=3D"source-line">      <span class=3D"syn_string=
+">"<a href=3D"https://accounts.google.com/o/oauth2/auth">https://accounts.g=
+oogle.com/o/oauth2/auth</a>"</span>,
+</code>
+</div>
+<div role=3D"row" id=3D"line-73" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"8057711ec3=
+c3711d7b6e3857dc54899bee01f784#mailnews/base/util/OAuth2Providers.jsm#44" r=
+ole=3D"button" aria-label=3D"same hash 12" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"73"></div>
+  <code role=3D"cell" class=3D"source-line">      <span class=3D"syn_string=
+">"<a href=3D"https://www.googleapis.com/oauth2/v3/token">https://www.googl=
+eapis.com/oauth2/v3/token</a>"</span>,
+</code>
+</div>
+<div role=3D"row" id=3D"line-74" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"8057711ec3=
+c3711d7b6e3857dc54899bee01f784#mailnews/base/util/OAuth2Providers.jsm#45" r=
+ole=3D"button" aria-label=3D"same hash 12" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"74"></div>
+  <code role=3D"cell" class=3D"source-line">    ],
+</code>
+</div>
+<div role=3D"row" id=3D"line-75" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"8057711ec3=
+c3711d7b6e3857dc54899bee01f784#mailnews/base/util/OAuth2Providers.jsm#46" r=
+ole=3D"button" aria-label=3D"same hash 12" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"75"></div>
+  <code role=3D"cell" class=3D"source-line">  ],
+</code>
+</div>
+<div role=3D"row" id=3D"line-76" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"8057711ec3=
+c3711d7b6e3857dc54899bee01f784#mailnews/base/util/OAuth2Providers.jsm#47" r=
+ole=3D"button" aria-label=3D"same hash 12" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"76"></div>
+  <code role=3D"cell" class=3D"source-line">  [
+</code>
+</div>
+<div role=3D"row" id=3D"line-77" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"8057711ec3=
+c3711d7b6e3857dc54899bee01f784#mailnews/base/util/OAuth2Providers.jsm#48" r=
+ole=3D"button" aria-label=3D"same hash 12" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"77"></div>
+  <code role=3D"cell" class=3D"source-line">    <span class=3D"syn_string">=
+"o2.mail.ru"</span>,
+</code>
+</div>
+<div role=3D"row" id=3D"line-78" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"8057711ec3=
+c3711d7b6e3857dc54899bee01f784#mailnews/base/util/OAuth2Providers.jsm#49" r=
+ole=3D"button" aria-label=3D"same hash 12" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"78"></div>
+  <code role=3D"cell" class=3D"source-line">    [
+</code>
+</div>
+<div role=3D"row" id=3D"line-79" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"8057711ec3=
+c3711d7b6e3857dc54899bee01f784#mailnews/base/util/OAuth2Providers.jsm#50" r=
+ole=3D"button" aria-label=3D"same hash 12" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"79"></div>
+  <code role=3D"cell" class=3D"source-line">      <span class=3D"syn_string=
+">"thunderbird"</span>,
+</code>
+</div>
+<div role=3D"row" id=3D"line-80" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"8057711ec3=
+c3711d7b6e3857dc54899bee01f784#mailnews/base/util/OAuth2Providers.jsm#51" r=
+ole=3D"button" aria-label=3D"same hash 12" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"80"></div>
+  <code role=3D"cell" class=3D"source-line">      <span class=3D"syn_string=
+">"I0dCAXrcaNFujaaY"</span>,
+</code>
+</div>
+<div role=3D"row" id=3D"line-81" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"8057711ec3=
+c3711d7b6e3857dc54899bee01f784#mailnews/base/util/OAuth2Providers.jsm#52" r=
+ole=3D"button" aria-label=3D"same hash 12" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"81"></div>
+  <code role=3D"cell" class=3D"source-line">      <span class=3D"syn_string=
+">"<a href=3D"https://o2.mail.ru/login">https://o2.mail.ru/login</a>"</span=
+>,
+</code>
+</div>
+<div role=3D"row" id=3D"line-82" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"8057711ec3=
+c3711d7b6e3857dc54899bee01f784#mailnews/base/util/OAuth2Providers.jsm#53" r=
+ole=3D"button" aria-label=3D"same hash 12" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"82"></div>
+  <code role=3D"cell" class=3D"source-line">      <span class=3D"syn_string=
+">"<a href=3D"https://o2.mail.ru/token">https://o2.mail.ru/token</a>"</span=
+>,
+</code>
+</div>
+<div role=3D"row" id=3D"line-83" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"8057711ec3=
+c3711d7b6e3857dc54899bee01f784#mailnews/base/util/OAuth2Providers.jsm#54" r=
+ole=3D"button" aria-label=3D"same hash 12" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"83"></div>
+  <code role=3D"cell" class=3D"source-line">    ],
+</code>
+</div>
+<div role=3D"row" id=3D"line-84" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"8057711ec3=
+c3711d7b6e3857dc54899bee01f784#mailnews/base/util/OAuth2Providers.jsm#55" r=
+ole=3D"button" aria-label=3D"same hash 12" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"84"></div>
+  <code role=3D"cell" class=3D"source-line">  ],
+</code>
+</div>
+<div role=3D"row" id=3D"line-85" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"8057711ec3=
+c3711d7b6e3857dc54899bee01f784#mailnews/base/util/OAuth2Providers.jsm#56" r=
+ole=3D"button" aria-label=3D"same hash 12" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"85"></div>
+  <code role=3D"cell" class=3D"source-line">  [
+</code>
+</div>
+<div role=3D"row" id=3D"line-86" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"8057711ec3=
+c3711d7b6e3857dc54899bee01f784#mailnews/base/util/OAuth2Providers.jsm#57" r=
+ole=3D"button" aria-label=3D"same hash 12" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"86"></div>
+  <code role=3D"cell" class=3D"source-line">    <span class=3D"syn_string">=
+"oauth.yandex.com"</span>,
+</code>
+</div>
+<div role=3D"row" id=3D"line-87" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"8057711ec3=
+c3711d7b6e3857dc54899bee01f784#mailnews/base/util/OAuth2Providers.jsm#58" r=
+ole=3D"button" aria-label=3D"same hash 12" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"87"></div>
+  <code role=3D"cell" class=3D"source-line">    [
+</code>
+</div>
+<div role=3D"row" id=3D"line-88" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"8057711ec3=
+c3711d7b6e3857dc54899bee01f784#mailnews/base/util/OAuth2Providers.jsm#59" r=
+ole=3D"button" aria-label=3D"same hash 12" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"88"></div>
+  <code role=3D"cell" class=3D"source-line">      <span class=3D"syn_string=
+">"2a00bba7374047a6ab79666485ffce31"</span>,
+</code>
+</div>
+<div role=3D"row" id=3D"line-89" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"8057711ec3=
+c3711d7b6e3857dc54899bee01f784#mailnews/base/util/OAuth2Providers.jsm#60" r=
+ole=3D"button" aria-label=3D"same hash 12" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"89"></div>
+  <code role=3D"cell" class=3D"source-line">      <span class=3D"syn_string=
+">"3ded85b4ec574c2187a55dc49d361280"</span>,
+</code>
+</div>
+<div role=3D"row" id=3D"line-90" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"8057711ec3=
+c3711d7b6e3857dc54899bee01f784#mailnews/base/util/OAuth2Providers.jsm#61" r=
+ole=3D"button" aria-label=3D"same hash 12" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"90"></div>
+  <code role=3D"cell" class=3D"source-line">      <span class=3D"syn_string=
+">"<a href=3D"https://oauth.yandex.com/authorize">https://oauth.yandex.com/=
+authorize</a>"</span>,
+</code>
+</div>
+<div role=3D"row" id=3D"line-91" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"8057711ec3=
+c3711d7b6e3857dc54899bee01f784#mailnews/base/util/OAuth2Providers.jsm#62" r=
+ole=3D"button" aria-label=3D"same hash 12" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"91"></div>
+  <code role=3D"cell" class=3D"source-line">      <span class=3D"syn_string=
+">"<a href=3D"https://oauth.yandex.com/token">https://oauth.yandex.com/toke=
+n</a>"</span>,
+</code>
+</div>
+<div role=3D"row" id=3D"line-92" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"8057711ec3=
+c3711d7b6e3857dc54899bee01f784#mailnews/base/util/OAuth2Providers.jsm#63" r=
+ole=3D"button" aria-label=3D"same hash 12" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"92"></div>
+  <code role=3D"cell" class=3D"source-line">    ],
+</code>
+</div>
+<div role=3D"row" id=3D"line-93" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"8057711ec3=
+c3711d7b6e3857dc54899bee01f784#mailnews/base/util/OAuth2Providers.jsm#64" r=
+ole=3D"button" aria-label=3D"same hash 12" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"93"></div>
+  <code role=3D"cell" class=3D"source-line">  ],
+</code>
+</div>
+<div role=3D"row" id=3D"line-94" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"8057711ec3=
+c3711d7b6e3857dc54899bee01f784#mailnews/base/util/OAuth2Providers.jsm#65" r=
+ole=3D"button" aria-label=3D"same hash 12" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"94"></div>
+  <code role=3D"cell" class=3D"source-line">  [
+</code>
+</div>
+<div role=3D"row" id=3D"line-95" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"8057711ec3=
+c3711d7b6e3857dc54899bee01f784#mailnews/base/util/OAuth2Providers.jsm#66" r=
+ole=3D"button" aria-label=3D"same hash 12" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"95"></div>
+  <code role=3D"cell" class=3D"source-line">    <span class=3D"syn_string">=
+"login.yahoo.com"</span>,
+</code>
+</div>
+<div role=3D"row" id=3D"line-96" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"8057711ec3=
+c3711d7b6e3857dc54899bee01f784#mailnews/base/util/OAuth2Providers.jsm#67" r=
+ole=3D"button" aria-label=3D"same hash 12" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"96"></div>
+  <code role=3D"cell" class=3D"source-line">    [
+</code>
+</div>
+<div role=3D"row" id=3D"line-97" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"8057711ec3=
+c3711d7b6e3857dc54899bee01f784#mailnews/base/util/OAuth2Providers.jsm#68" r=
+ole=3D"button" aria-label=3D"same hash 12" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"97"></div>
+  <code role=3D"cell" class=3D"source-line">      <span class=3D"syn_string=
+">"dj0yJmk9NUtCTWFMNVpTaVJmJmQ9WVdrOVJ6UjVTa2xJTXpRbWNHbzlNQS0tJnM9Y29uc3Vt=
+ZXJzZWNyZXQmeD0yYw--"</span>,
+</code>
+</div>
+<div role=3D"row" id=3D"line-98" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"8057711ec3=
+c3711d7b6e3857dc54899bee01f784#mailnews/base/util/OAuth2Providers.jsm#69" r=
+ole=3D"button" aria-label=3D"same hash 12" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"98"></div>
+  <code role=3D"cell" class=3D"source-line">      <span class=3D"syn_string=
+">"f2de6a30ae123cdbc258c15e0812799010d589cc"</span>,
+</code>
+</div>
+<div role=3D"row" id=3D"line-99" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"8057711ec3=
+c3711d7b6e3857dc54899bee01f784#mailnews/base/util/OAuth2Providers.jsm#70" r=
+ole=3D"button" aria-label=3D"same hash 12" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"99"></div>
+  <code role=3D"cell" class=3D"source-line">      <span class=3D"syn_string=
+">"<a href=3D"https://api.login.yahoo.com/oauth2/request_auth">https://api.=
+login.yahoo.com/oauth2/request_auth</a>"</span>,
+</code>
+</div>
+<div role=3D"row" id=3D"line-100" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"8057711ec3=
+c3711d7b6e3857dc54899bee01f784#mailnews/base/util/OAuth2Providers.jsm#71" r=
+ole=3D"button" aria-label=3D"same hash 12" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"100"></div>
+  <code role=3D"cell" class=3D"source-line">      <span class=3D"syn_string=
+">"<a href=3D"https://api.login.yahoo.com/oauth2/get_token">https://api.log=
+in.yahoo.com/oauth2/get_token</a>"</span>,
+</code>
+</div>
+<div role=3D"row" id=3D"line-101" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"8057711ec3=
+c3711d7b6e3857dc54899bee01f784#mailnews/base/util/OAuth2Providers.jsm#72" r=
+ole=3D"button" aria-label=3D"same hash 12" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"101"></div>
+  <code role=3D"cell" class=3D"source-line">    ],
+</code>
+</div>
+<div role=3D"row" id=3D"line-102" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"8057711ec3=
+c3711d7b6e3857dc54899bee01f784#mailnews/base/util/OAuth2Providers.jsm#73" r=
+ole=3D"button" aria-label=3D"same hash 12" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"102"></div>
+  <code role=3D"cell" class=3D"source-line">  ],
+</code>
+</div>
+<div role=3D"row" id=3D"line-103" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"8057711ec3=
+c3711d7b6e3857dc54899bee01f784#mailnews/base/util/OAuth2Providers.jsm#74" r=
+ole=3D"button" aria-label=3D"same hash 12" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"103"></div>
+  <code role=3D"cell" class=3D"source-line">  [
+</code>
+</div>
+<div role=3D"row" id=3D"line-104" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"8057711ec3=
+c3711d7b6e3857dc54899bee01f784#mailnews/base/util/OAuth2Providers.jsm#75" r=
+ole=3D"button" aria-label=3D"same hash 12" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"104"></div>
+  <code role=3D"cell" class=3D"source-line">    <span class=3D"syn_string">=
+"login.aol.com"</span>,
+</code>
+</div>
+<div role=3D"row" id=3D"line-105" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"8057711ec3=
+c3711d7b6e3857dc54899bee01f784#mailnews/base/util/OAuth2Providers.jsm#76" r=
+ole=3D"button" aria-label=3D"same hash 12" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"105"></div>
+  <code role=3D"cell" class=3D"source-line">    [
+</code>
+</div>
+<div role=3D"row" id=3D"line-106" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"8057711ec3=
+c3711d7b6e3857dc54899bee01f784#mailnews/base/util/OAuth2Providers.jsm#77" r=
+ole=3D"button" aria-label=3D"same hash 12" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"106"></div>
+  <code role=3D"cell" class=3D"source-line">      <span class=3D"syn_string=
+">"dj0yJmk9OXRHc1FqZHRQYzVvJmQ9WVdrOU1UQnJOR0pvTjJrbWNHbzlNQS0tJnM9Y29uc3Vt=
+ZXJzZWNyZXQmeD02NQ--"</span>,
+</code>
+</div>
+<div role=3D"row" id=3D"line-107" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"8057711ec3=
+c3711d7b6e3857dc54899bee01f784#mailnews/base/util/OAuth2Providers.jsm#78" r=
+ole=3D"button" aria-label=3D"same hash 12" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"107"></div>
+  <code role=3D"cell" class=3D"source-line">      <span class=3D"syn_string=
+">"79c1c11991d148ddd02a919000d69879942fc278"</span>,
+</code>
+</div>
+<div role=3D"row" id=3D"line-108" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"8057711ec3=
+c3711d7b6e3857dc54899bee01f784#mailnews/base/util/OAuth2Providers.jsm#79" r=
+ole=3D"button" aria-label=3D"same hash 12" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"108"></div>
+  <code role=3D"cell" class=3D"source-line">      <span class=3D"syn_string=
+">"<a href=3D"https://api.login.aol.com/oauth2/request_auth">https://api.lo=
+gin.aol.com/oauth2/request_auth</a>"</span>,
+</code>
+</div>
+<div role=3D"row" id=3D"line-109" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"8057711ec3=
+c3711d7b6e3857dc54899bee01f784#mailnews/base/util/OAuth2Providers.jsm#80" r=
+ole=3D"button" aria-label=3D"same hash 12" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"109"></div>
+  <code role=3D"cell" class=3D"source-line">      <span class=3D"syn_string=
+">"<a href=3D"https://api.login.aol.com/oauth2/get_token">https://api.login=
+.aol.com/oauth2/get_token</a>"</span>,
+</code>
+</div>
+<div role=3D"row" id=3D"line-110" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"8057711ec3=
+c3711d7b6e3857dc54899bee01f784#mailnews/base/util/OAuth2Providers.jsm#81" r=
+ole=3D"button" aria-label=3D"same hash 12" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"110"></div>
+  <code role=3D"cell" class=3D"source-line">    ],
+</code>
+</div>
+<div role=3D"row" id=3D"line-111" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"8057711ec3=
+c3711d7b6e3857dc54899bee01f784#mailnews/base/util/OAuth2Providers.jsm#82" r=
+ole=3D"button" aria-label=3D"same hash 12" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"111"></div>
+  <code role=3D"cell" class=3D"source-line">  ],
+</code>
+</div>
+<div role=3D"row" id=3D"line-112" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c2" data-blame=3D"ac0d3152e1=
+77f4fe29f72383497989e545f7d1b4#mailnews/base/util/OAuth2Providers.jsm#108" =
+role=3D"button" aria-label=3D"new hash 10" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"112"></div>
+  <code role=3D"cell" class=3D"source-line">
+</code>
+</div>
+<div role=3D"row" id=3D"line-113" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c2" data-blame=3D"ac0d3152e1=
+77f4fe29f72383497989e545f7d1b4#mailnews/base/util/OAuth2Providers.jsm#109" =
+role=3D"button" aria-label=3D"same hash 10" aria-expanded=3D"false"></div><=
+/div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"113"></div>
+  <code role=3D"cell" class=3D"source-line">  [
+</code>
+</div>
+<div role=3D"row" id=3D"line-114" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c2" data-blame=3D"ac0d3152e1=
+77f4fe29f72383497989e545f7d1b4#mailnews/base/util/OAuth2Providers.jsm#110" =
+role=3D"button" aria-label=3D"same hash 10" aria-expanded=3D"false"></div><=
+/div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"114"></div>
+  <code role=3D"cell" class=3D"source-line">    <span class=3D"syn_string">=
+"login.microsoftonline.com"</span>,
+</code>
+</div>
+<div role=3D"row" id=3D"line-115" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c2" data-blame=3D"ac0d3152e1=
+77f4fe29f72383497989e545f7d1b4#mailnews/base/util/OAuth2Providers.jsm#111" =
+role=3D"button" aria-label=3D"same hash 10" aria-expanded=3D"false"></div><=
+/div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"115"></div>
+  <code role=3D"cell" class=3D"source-line">    [
+</code>
+</div>
+<div role=3D"row" id=3D"line-116" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c2" data-blame=3D"ac0d3152e1=
+77f4fe29f72383497989e545f7d1b4#mailnews/base/util/OAuth2Providers.jsm#112" =
+role=3D"button" aria-label=3D"same hash 10" aria-expanded=3D"false"></div><=
+/div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"116"></div>
+  <code role=3D"cell" class=3D"source-line">      <span class=3D"syn_string=
+">"08162f7c-0fd2-4200-a84a-f25a4db0b584"</span>, <span class=3D"syn_comment=
+">// Application (client) ID</span>
+</code>
+</div>
+<div role=3D"row" id=3D"line-117" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c2" data-blame=3D"ac0d3152e1=
+77f4fe29f72383497989e545f7d1b4#mailnews/base/util/OAuth2Providers.jsm#113" =
+role=3D"button" aria-label=3D"same hash 10" aria-expanded=3D"false"></div><=
+/div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"117"></div>
+  <code role=3D"cell" class=3D"source-line">      <span class=3D"syn_string=
+">"TxRBilcHdC6WGBee]fs?QR:SJ8nI[g82"</span>, <span class=3D"syn_comment">//=
+ @see App registrations | Certificates &amp; secrets</span>
+</code>
+</div>
+<div role=3D"row" id=3D"line-118" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c2" data-blame=3D"ac0d3152e1=
+77f4fe29f72383497989e545f7d1b4#mailnews/base/util/OAuth2Providers.jsm#114" =
+role=3D"button" aria-label=3D"same hash 10" aria-expanded=3D"false"></div><=
+/div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"118"></div>
+  <code role=3D"cell" class=3D"source-line">      <span class=3D"syn_commen=
+t">// <a href=3D"https://docs.microsoft.com/en-us/azure/active-directory/de=
+velop/active-directory-v2-protocols#endpoints">https://docs.microsoft.com/e=
+n-us/azure/active-directory/develop/active-directory-v2-protocols#endpoints=
+</a></span>
+</code>
+</div>
+<div role=3D"row" id=3D"line-119" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c2" data-blame=3D"ac0d3152e1=
+77f4fe29f72383497989e545f7d1b4#mailnews/base/util/OAuth2Providers.jsm#115" =
+role=3D"button" aria-label=3D"same hash 10" aria-expanded=3D"false"></div><=
+/div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"119"></div>
+  <code role=3D"cell" class=3D"source-line">      <span class=3D"syn_string=
+">"<a href=3D"https://login.microsoftonline.com/common/oauth2/v2.0/authoriz=
+e">https://login.microsoftonline.com/common/oauth2/v2.0/authorize</a>"</spa=
+n>,
+</code>
+</div>
+<div role=3D"row" id=3D"line-120" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c2" data-blame=3D"ac0d3152e1=
+77f4fe29f72383497989e545f7d1b4#mailnews/base/util/OAuth2Providers.jsm#116" =
+role=3D"button" aria-label=3D"same hash 10" aria-expanded=3D"false"></div><=
+/div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"120"></div>
+  <code role=3D"cell" class=3D"source-line">      <span class=3D"syn_string=
+">"<a href=3D"https://login.microsoftonline.com/common/oauth2/v2.0/token">h=
+ttps://login.microsoftonline.com/common/oauth2/v2.0/token</a>"</span>,
+</code>
+</div>
+<div role=3D"row" id=3D"line-121" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c2" data-blame=3D"ac0d3152e1=
+77f4fe29f72383497989e545f7d1b4#mailnews/base/util/OAuth2Providers.jsm#117" =
+role=3D"button" aria-label=3D"same hash 10" aria-expanded=3D"false"></div><=
+/div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"121"></div>
+  <code role=3D"cell" class=3D"source-line">    ],
+</code>
+</div>
+<div role=3D"row" id=3D"line-122" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c2" data-blame=3D"ac0d3152e1=
+77f4fe29f72383497989e545f7d1b4#mailnews/base/util/OAuth2Providers.jsm#118" =
+role=3D"button" aria-label=3D"same hash 10" aria-expanded=3D"false"></div><=
+/div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"122"></div>
+  <code role=3D"cell" class=3D"source-line">  ],
+</code>
+</div>
+<div role=3D"row" id=3D"line-123" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"6423d3829a=
+81205ab4db2f7531ba6a7f578e309f#mailnews/base/util/OAuth2Providers.jsm#32" r=
+ole=3D"button" aria-label=3D"new hash 1" aria-expanded=3D"false"></div></di=
+v>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"123"></div>
+  <code role=3D"cell" class=3D"source-line">]);
+</code>
+</div>
+<div role=3D"row" id=3D"line-124" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"6423d3829a=
+81205ab4db2f7531ba6a7f578e309f#mailnews/base/util/OAuth2Providers.jsm#33" r=
+ole=3D"button" aria-label=3D"same hash 1" aria-expanded=3D"false"></div></d=
+iv>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"124"></div>
+  <code role=3D"cell" class=3D"source-line">
+</code>
+</div>
+<div role=3D"row" id=3D"line-125" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"6423d3829a=
+81205ab4db2f7531ba6a7f578e309f#mailnews/base/util/OAuth2Providers.jsm#34" r=
+ole=3D"button" aria-label=3D"same hash 1" aria-expanded=3D"false"></div></d=
+iv>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"125"></div>
+  <code role=3D"cell" class=3D"source-line"><span class=3D"syn_comment">/**=
+</span>
+</code>
+</div>
+<div role=3D"row" id=3D"line-126" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c2" data-blame=3D"aed31b2fbe=
+ba0d4688988f45b220c7d06e0f6c34#mailnews/base/util/OAuth2Providers.jsm#96" r=
+ole=3D"button" aria-label=3D"new hash 2" aria-expanded=3D"false"></div></di=
+v>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"126"></div>
+  <code role=3D"cell" class=3D"source-line"><span class=3D"syn_comment"> * =
+OAuth2Providers: Methods to lookup OAuth2 parameters for supported OAuth2</=
+span>
+</code>
+</div>
+<div role=3D"row" id=3D"line-127" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c2" data-blame=3D"aed31b2fbe=
+ba0d4688988f45b220c7d06e0f6c34#mailnews/base/util/OAuth2Providers.jsm#97" r=
+ole=3D"button" aria-label=3D"same hash 2" aria-expanded=3D"false"></div></d=
+iv>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"127"></div>
+  <code role=3D"cell" class=3D"source-line"><span class=3D"syn_comment"> * =
+providers.</span>
+</code>
+</div>
+<div role=3D"row" id=3D"line-128" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"6423d3829a=
+81205ab4db2f7531ba6a7f578e309f#mailnews/base/util/OAuth2Providers.jsm#37" r=
+ole=3D"button" aria-label=3D"new hash 1" aria-expanded=3D"false"></div></di=
+v>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"128"></div>
+  <code role=3D"cell" class=3D"source-line"><span class=3D"syn_comment"> */=
+</span>
+</code>
+</div>
+<div role=3D"row" id=3D"line-129" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"6423d3829a=
+81205ab4db2f7531ba6a7f578e309f#mailnews/base/util/OAuth2Providers.jsm#38" r=
+ole=3D"button" aria-label=3D"same hash 1" aria-expanded=3D"false"></div></d=
+iv>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"129"></div>
+  <code role=3D"cell" class=3D"source-line"><span class=3D"syn_reserved">va=
+r</span> <span class=3D"syn_def" data-symbols=3D"#OAuth2Providers" data-i=
+=3D"5">OAuth2Providers</span> =3D {
+</code>
+</div>
+<div role=3D"row" id=3D"line-130" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"6423d3829a=
+81205ab4db2f7531ba6a7f578e309f#mailnews/base/util/OAuth2Providers.jsm#40" r=
+ole=3D"button" aria-label=3D"same hash 1" aria-expanded=3D"false"></div></d=
+iv>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"130"></div>
+  <code role=3D"cell" class=3D"source-line">  <span class=3D"syn_comment">/=
+**</span>
+</code>
+</div>
+<div role=3D"row" id=3D"line-131" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"6423d3829a=
+81205ab4db2f7531ba6a7f578e309f#mailnews/base/util/OAuth2Providers.jsm#41" r=
+ole=3D"button" aria-label=3D"same hash 1" aria-expanded=3D"false"></div></d=
+iv>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"131"></div>
+  <code role=3D"cell" class=3D"source-line"><span class=3D"syn_comment">   =
+* Map a hostname to the relevant issuer and scope.</span>
+</code>
+</div>
+<div role=3D"row" id=3D"line-132" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"6423d3829a=
+81205ab4db2f7531ba6a7f578e309f#mailnews/base/util/OAuth2Providers.jsm#42" r=
+ole=3D"button" aria-label=3D"same hash 1" aria-expanded=3D"false"></div></d=
+iv>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"132"></div>
+  <code role=3D"cell" class=3D"source-line"><span class=3D"syn_comment">   =
+*</span>
+</code>
+</div>
+<div role=3D"row" id=3D"line-133" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c2" data-blame=3D"aed31b2fbe=
+ba0d4688988f45b220c7d06e0f6c34#mailnews/base/util/OAuth2Providers.jsm#103" =
+role=3D"button" aria-label=3D"new hash 2" aria-expanded=3D"false"></div></d=
+iv>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"133"></div>
+  <code role=3D"cell" class=3D"source-line"><span class=3D"syn_comment">   =
+* @param {string} hostname - The hostname of the server. For example</span>
+</code>
+</div>
+<div role=3D"row" id=3D"line-134" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c2" data-blame=3D"aed31b2fbe=
+ba0d4688988f45b220c7d06e0f6c34#mailnews/base/util/OAuth2Providers.jsm#104" =
+role=3D"button" aria-label=3D"same hash 2" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"134"></div>
+  <code role=3D"cell" class=3D"source-line"><span class=3D"syn_comment">   =
+*  "imap.googlemail.com".</span>
+</code>
+</div>
+<div role=3D"row" id=3D"line-135" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"6423d3829a=
+81205ab4db2f7531ba6a7f578e309f#mailnews/base/util/OAuth2Providers.jsm#45" r=
+ole=3D"button" aria-label=3D"new hash 1" aria-expanded=3D"false"></div></di=
+v>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"135"></div>
+  <code role=3D"cell" class=3D"source-line"><span class=3D"syn_comment">   =
+*</span>
+</code>
+</div>
+<div role=3D"row" id=3D"line-136" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c2" data-blame=3D"aed31b2fbe=
+ba0d4688988f45b220c7d06e0f6c34#mailnews/base/util/OAuth2Providers.jsm#106" =
+role=3D"button" aria-label=3D"new hash 2" aria-expanded=3D"false"></div></d=
+iv>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"136"></div>
+  <code role=3D"cell" class=3D"source-line"><span class=3D"syn_comment">   =
+* @returns {Array} An array containing [issuer, scope] for the hostname, or=
+</span>
+</code>
+</div>
+<div role=3D"row" id=3D"line-137" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c2" data-blame=3D"aed31b2fbe=
+ba0d4688988f45b220c7d06e0f6c34#mailnews/base/util/OAuth2Providers.jsm#107" =
+role=3D"button" aria-label=3D"same hash 2" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"137"></div>
+  <code role=3D"cell" class=3D"source-line"><span class=3D"syn_comment">   =
+*   undefined if not found.</span>
+</code>
+</div>
+<div role=3D"row" id=3D"line-138" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c2" data-blame=3D"aed31b2fbe=
+ba0d4688988f45b220c7d06e0f6c34#mailnews/base/util/OAuth2Providers.jsm#108" =
+role=3D"button" aria-label=3D"same hash 2" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"138"></div>
+  <code role=3D"cell" class=3D"source-line"><span class=3D"syn_comment">   =
+*   - issuer is a string representing the organization</span>
+</code>
+</div>
+<div role=3D"row" id=3D"line-139" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c2" data-blame=3D"aed31b2fbe=
+ba0d4688988f45b220c7d06e0f6c34#mailnews/base/util/OAuth2Providers.jsm#109" =
+role=3D"button" aria-label=3D"same hash 2" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"139"></div>
+  <code role=3D"cell" class=3D"source-line"><span class=3D"syn_comment">   =
+*   - scope is an OAuth2 parameter describing the required access level</sp=
+an>
+</code>
+</div>
+<div role=3D"row" id=3D"line-140" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"6423d3829a=
+81205ab4db2f7531ba6a7f578e309f#mailnews/base/util/OAuth2Providers.jsm#50" r=
+ole=3D"button" aria-label=3D"new hash 1" aria-expanded=3D"false"></div></di=
+v>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"140"></div>
+  <code role=3D"cell" class=3D"source-line"><span class=3D"syn_comment">   =
+*/</span>
+</code>
+</div>
+<div class=3D"nesting-container nesting-depth-0"><div role=3D"row" id=3D"li=
+ne-141" class=3D"source-line-with-number nesting-sticky-line">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c2" data-blame=3D"aed31b2fbe=
+ba0d4688988f45b220c7d06e0f6c34#mailnews/base/util/OAuth2Providers.jsm#111" =
+role=3D"button" aria-label=3D"new hash 2" aria-expanded=3D"false"></div></d=
+iv>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"141"></div>
+  <code role=3D"cell" class=3D"source-line">  <span class=3D"syn_def" data-=
+symbols=3D"#getHostnameDetails,OAuth2Providers#getHostnameDetails" data-i=
+=3D"6">getHostnameDetails</span>(<span data-symbols=3D"1308-0">hostname</sp=
+an>) {
+</code>
+</div>
+<div role=3D"row" id=3D"line-142" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c2" data-blame=3D"aed31b2fbe=
+ba0d4688988f45b220c7d06e0f6c34#mailnews/base/util/OAuth2Providers.jsm#112" =
+role=3D"button" aria-label=3D"same hash 2" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"142"></div>
+  <code role=3D"cell" class=3D"source-line">    <span class=3D"syn_reserved=
+">return</span> <span data-symbols=3D"#kHostnames" data-i=3D"7">kHostnames<=
+/span>.<span class=3D"syn_reserved">get</span>(<span data-symbols=3D"1308-0=
+">hostname</span>);
+</code>
+</div>
+</div><div role=3D"row" id=3D"line-143" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"38cc5f7e12=
+6af76578cab30d5a5e25fa51325139#mailnews/base/util/OAuth2Providers.jsm#80" r=
+ole=3D"button" aria-label=3D"new hash 11" aria-expanded=3D"false"></div></d=
+iv>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"143"></div>
+  <code role=3D"cell" class=3D"source-line">  },
+</code>
+</div>
+<div role=3D"row" id=3D"line-144" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c2" data-blame=3D"6423d3829a=
+81205ab4db2f7531ba6a7f578e309f#mailnews/base/util/OAuth2Providers.jsm#52" r=
+ole=3D"button" aria-label=3D"new hash 1" aria-expanded=3D"false"></div></di=
+v>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"144"></div>
+  <code role=3D"cell" class=3D"source-line">
+</code>
+</div>
+<div role=3D"row" id=3D"line-145" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c2" data-blame=3D"6423d3829a=
+81205ab4db2f7531ba6a7f578e309f#mailnews/base/util/OAuth2Providers.jsm#53" r=
+ole=3D"button" aria-label=3D"same hash 1" aria-expanded=3D"false"></div></d=
+iv>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"145"></div>
+  <code role=3D"cell" class=3D"source-line">  <span class=3D"syn_comment">/=
+**</span>
+</code>
+</div>
+<div role=3D"row" id=3D"line-146" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c2" data-blame=3D"6423d3829a=
+81205ab4db2f7531ba6a7f578e309f#mailnews/base/util/OAuth2Providers.jsm#54" r=
+ole=3D"button" aria-label=3D"same hash 1" aria-expanded=3D"false"></div></d=
+iv>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"146"></div>
+  <code role=3D"cell" class=3D"source-line"><span class=3D"syn_comment">   =
+* Map an issuer to OAuth2 account details.</span>
+</code>
+</div>
+<div role=3D"row" id=3D"line-147" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c2" data-blame=3D"6423d3829a=
+81205ab4db2f7531ba6a7f578e309f#mailnews/base/util/OAuth2Providers.jsm#55" r=
+ole=3D"button" aria-label=3D"same hash 1" aria-expanded=3D"false"></div></d=
+iv>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"147"></div>
+  <code role=3D"cell" class=3D"source-line"><span class=3D"syn_comment">   =
+*</span>
+</code>
+</div>
+<div role=3D"row" id=3D"line-148" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"aed31b2fbe=
+ba0d4688988f45b220c7d06e0f6c34#mailnews/base/util/OAuth2Providers.jsm#118" =
+role=3D"button" aria-label=3D"new hash 2" aria-expanded=3D"false"></div></d=
+iv>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"148"></div>
+  <code role=3D"cell" class=3D"source-line"><span class=3D"syn_comment">   =
+* @param {string} issuer - The organization issuing OAuth2 parameters, e.g.=
+</span>
+</code>
+</div>
+<div role=3D"row" id=3D"line-149" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"aed31b2fbe=
+ba0d4688988f45b220c7d06e0f6c34#mailnews/base/util/OAuth2Providers.jsm#119" =
+role=3D"button" aria-label=3D"same hash 2" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"149"></div>
+  <code role=3D"cell" class=3D"source-line"><span class=3D"syn_comment">   =
+*   "accounts.google.com".</span>
+</code>
+</div>
+<div role=3D"row" id=3D"line-150" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c2" data-blame=3D"6423d3829a=
+81205ab4db2f7531ba6a7f578e309f#mailnews/base/util/OAuth2Providers.jsm#58" r=
+ole=3D"button" aria-label=3D"new hash 1" aria-expanded=3D"false"></div></di=
+v>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"150"></div>
+  <code role=3D"cell" class=3D"source-line"><span class=3D"syn_comment">   =
+*</span>
+</code>
+</div>
+<div role=3D"row" id=3D"line-151" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"aed31b2fbe=
+ba0d4688988f45b220c7d06e0f6c34#mailnews/base/util/OAuth2Providers.jsm#121" =
+role=3D"button" aria-label=3D"new hash 2" aria-expanded=3D"false"></div></d=
+iv>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"151"></div>
+  <code role=3D"cell" class=3D"source-line"><span class=3D"syn_comment">   =
+* @returns {Array} An array containing [clientId, clientSecret, authorizati=
+onEndpoint, tokenEndpoint].</span>
+</code>
+</div>
+<div role=3D"row" id=3D"line-152" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"aed31b2fbe=
+ba0d4688988f45b220c7d06e0f6c34#mailnews/base/util/OAuth2Providers.jsm#122" =
+role=3D"button" aria-label=3D"same hash 2" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"152"></div>
+  <code role=3D"cell" class=3D"source-line"><span class=3D"syn_comment">   =
+*   clientId and clientSecret are strings representing the account register=
+ed</span>
+</code>
+</div>
+<div role=3D"row" id=3D"line-153" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"aed31b2fbe=
+ba0d4688988f45b220c7d06e0f6c34#mailnews/base/util/OAuth2Providers.jsm#123" =
+role=3D"button" aria-label=3D"same hash 2" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"153"></div>
+  <code role=3D"cell" class=3D"source-line"><span class=3D"syn_comment">   =
+*   for Thunderbird with the organization.</span>
+</code>
+</div>
+<div role=3D"row" id=3D"line-154" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"aed31b2fbe=
+ba0d4688988f45b220c7d06e0f6c34#mailnews/base/util/OAuth2Providers.jsm#124" =
+role=3D"button" aria-label=3D"same hash 2" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"154"></div>
+  <code role=3D"cell" class=3D"source-line"><span class=3D"syn_comment">   =
+*   authorizationEndpoint and tokenEndpoint are url strings representing</s=
+pan>
+</code>
+</div>
+<div role=3D"row" id=3D"line-155" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"aed31b2fbe=
+ba0d4688988f45b220c7d06e0f6c34#mailnews/base/util/OAuth2Providers.jsm#125" =
+role=3D"button" aria-label=3D"same hash 2" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"155"></div>
+  <code role=3D"cell" class=3D"source-line"><span class=3D"syn_comment">   =
+*   endpoints to access OAuth2 authentication.</span>
+</code>
+</div>
+<div role=3D"row" id=3D"line-156" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c2" data-blame=3D"6423d3829a=
+81205ab4db2f7531ba6a7f578e309f#mailnews/base/util/OAuth2Providers.jsm#64" r=
+ole=3D"button" aria-label=3D"new hash 1" aria-expanded=3D"false"></div></di=
+v>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"156"></div>
+  <code role=3D"cell" class=3D"source-line"><span class=3D"syn_comment">   =
+*/</span>
+</code>
+</div>
+<div class=3D"nesting-container nesting-depth-0"><div role=3D"row" id=3D"li=
+ne-157" class=3D"source-line-with-number nesting-sticky-line">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"aed31b2fbe=
+ba0d4688988f45b220c7d06e0f6c34#mailnews/base/util/OAuth2Providers.jsm#127" =
+role=3D"button" aria-label=3D"new hash 2" aria-expanded=3D"false"></div></d=
+iv>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"157"></div>
+  <code role=3D"cell" class=3D"source-line">  <span class=3D"syn_def" data-=
+symbols=3D"#getIssuerDetails,OAuth2Providers#getIssuerDetails" data-i=3D"8"=
+>getIssuerDetails</span>(<span data-symbols=3D"1308-1">issuer</span>) {
+</code>
+</div>
+<div role=3D"row" id=3D"line-158" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c1" data-blame=3D"aed31b2fbe=
+ba0d4688988f45b220c7d06e0f6c34#mailnews/base/util/OAuth2Providers.jsm#128" =
+role=3D"button" aria-label=3D"same hash 2" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"158"></div>
+  <code role=3D"cell" class=3D"source-line">    <span class=3D"syn_reserved=
+">return</span> <span data-symbols=3D"#kIssuers" data-i=3D"9">kIssuers</spa=
+n>.<span class=3D"syn_reserved">get</span>(<span data-symbols=3D"1308-1">is=
+suer</span>);
+</code>
+</div>
+</div><div role=3D"row" id=3D"line-159" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c2" data-blame=3D"38cc5f7e12=
+6af76578cab30d5a5e25fa51325139#mailnews/base/util/OAuth2Providers.jsm#96" r=
+ole=3D"button" aria-label=3D"new hash 11" aria-expanded=3D"false"></div></d=
+iv>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"159"></div>
+  <code role=3D"cell" class=3D"source-line">  },
+</code>
+</div>
+<div role=3D"row" id=3D"line-160" class=3D"source-line-with-number">
+  <div role=3D"cell"><div class=3D"cov-strip cov-no-data"></div></div>
+  <div role=3D"cell"><div class=3D"blame-strip c2" data-blame=3D"38cc5f7e12=
+6af76578cab30d5a5e25fa51325139#mailnews/base/util/OAuth2Providers.jsm#97" r=
+ole=3D"button" aria-label=3D"same hash 11" aria-expanded=3D"false"></div></=
+div>
+  <div role=3D"cell" class=3D"line-number" data-line-number=3D"160"></div>
+  <code role=3D"cell" class=3D"source-line">};
+</code>
+</div>
+</div>
+
+    </div>
+  <div id=3D"foot" class=3D"footer">
+    This page was generated by Searchfox <span class=3D"pretty-date" data-d=
+atetime=3D"Sat,  6 Feb 2021 05:42:56 +0000">2021-2-06 13:42</span>.
+  </div>
+  <span id=3D"data" data-root=3D"/" data-search=3D"/comm-central/search" da=
+ta-tree=3D"comm-central" data-path=3D"mailnews/base/src/OAuth2Providers.jsm=
+"></span>
+ =20
+ =20
+ =20
+ =20
+ =20
+  </div><ul id=3D"context-menu" class=3D"context-menu" tabindex=3D"0" style=
+=3D"top: 149px; left: 133px; display: none;"><li><a href=3D"https://searchf=
+ox.org/comm-central/search?q=3DLicense&amp;redirect=3Dfalse" class=3D"icon =
+search">Search for the substring <strong>License</strong></a></li></ul>
+ =20
+
+</body><div id=3D"blame-popup" class=3D"blame-popup" style=3D"display: none=
+;"></div></html>
+------MultipartBoundary--mxmgcRIi5bLpbeiJ8bAlpefOcW3ciYm8H0BhCh0yDN----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://searchfox.org/static/css/mozsearch.css
+
+@charset "utf-8";
+
+@font-face { font-family: icons; src: url("/static/fonts/icons.eot?#iefix20=
+13") format("embedded-opentype"), url("/static/fonts/icons.woff?2013") form=
+at("woff"), url("/static/fonts/icons.ttf?2013") format("truetype"); font-we=
+ight: normal; font-style: normal; }
+
+:root { --highlighted-bgcolor: rgb(255, 255, 204); --sticky-header-bgcolor:=
+ #ffe; --blame-c1: lightgray; --blame-c2: darkgray; }
+
+a { background: transparent; }
+
+a:active, a:hover { outline: 0px; }
+
+table { border-collapse: collapse; border-spacing: 0px; }
+
+* { box-sizing: border-box; }
+
+:root { font: 12px / 1.5 Arial, Helvetica, sans-serif; background-color: rg=
+b(255, 255, 255); color: rgb(51, 51, 51); }
+
+body { margin: 0px; }
+
+h4 { margin: 0px 0px 0.5rem; }
+
+a:link, a:visited { color: inherit; text-decoration: none; }
+
+a:hover { text-decoration: underline; }
+
+caption { text-align: left; }
+
+table { margin: 0px; padding: 0px; width: 100%; overflow: auto; }
+
+table#file { width: 100%; }
+
+table.folder-content thead tr:first-child { color: rgb(85, 85, 85); padding=
+: 0.5em; }
+
+table th { font-weight: bold; padding: 0.5em; text-align: left; }
+
+.folder-content th:first-child { padding-left: 0.5em; }
+
+.folder-content th { padding: 0.2em 0.5em 0.2em 0px; }
+
+table.folder-content thead tr:first-child, table.folder-content tr:nth-chil=
+d(2n) { background-color: rgb(245, 245, 245); }
+
+table.folder-content tbody tr:hover, table tbody tr:hover, .context-menu a:=
+hover { background-color: rgb(232, 232, 232); }
+
+table.folder-content td { padding: 0px; }
+
+table.folder-content a { display: block; padding-top: 0.5em; padding-right:=
+ 0.5em; padding-bottom: 0.5em; text-decoration: none; }
+
+table td { padding: 0.5em; }
+
+table.folder-content td.description { max-width: 60vw; padding-right: 2em; =
+}
+
+table.folder-content td.description a { white-space: nowrap; overflow: hidd=
+en; text-overflow: ellipsis; }
+
+td.code { padding: 0px 0px 0px 0.5em; }
+
+td#line-numbers { padding: 0px; }
+
+.source-line-with-number { padding: 0rem 1rem; line-height: 1.3; display: f=
+lex; }
+
+.line-number::before { content: attr(data-line-number); }
+
+.line-number { display: inline-block; cursor: pointer; text-align: right; p=
+adding: 0px 0.5rem; color: rgb(170, 170, 170); width: 8ex; flex-shrink: 0; =
+user-select: none; }
+
+.highlighted { background: none 0px 0px repeat scroll content-box content-b=
+ox rgb(255, 255, 204) !important; }
+
+.source-line { margin: 0px; padding: 0px; display: inline-block; white-spac=
+e: pre; flex-grow: 1; }
+
+.source-line-with-number.stuck { background: var(--sticky-header-bgcolor); =
+}
+
+.source-line-with-number.last-stuck { box-shadow: rgba(0, 0, 0, 0.133) 0px =
+4px 8px; }
+
+.source-line a { cursor: pointer; }
+
+.code code { padding: 0px 0.5rem; width: 100%; }
+
+.code code a { cursor: context-menu; }
+
+mark { position: relative; padding: 0.5rem; }
+
+.logo a:focus { background-color: transparent; }
+
+html { height: 100%; }
+
+body { height: 100%; overflow: hidden; display: flex; flex-direction: colum=
+n; }
+
+#fixed-header { flex-shrink: 0; display: inline-flex; }
+
+#scrolling { flex-grow: 1; overflow-y: auto; }
+
+.nesting-depth-0 { --nesting-level: 0; }
+
+.nesting-depth-1 { --nesting-level: 1; }
+
+.nesting-depth-2 { --nesting-level: 2; }
+
+.nesting-depth-3 { --nesting-level: 3; }
+
+.nesting-depth-4 { --nesting-level: 4; }
+
+.nesting-depth-5 { --nesting-level: 5; }
+
+.nesting-depth-6 { --nesting-level: 6; }
+
+.nesting-depth-7 { --nesting-level: 7; }
+
+.nesting-depth-8 { --nesting-level: 8; }
+
+.nesting-depth-9 { --nesting-level: 9; }
+
+.nesting-sticky-line { position: sticky; background-color: white; top: calc=
+(var(--nesting-level) * 12px * 1.3); z-index: calc(100 - var(--nesting-leve=
+l)); }
+
+.results tr:hover, .file tr:hover { background: none; }
+
+.results tr, .file tr { border: 0px; line-height: 1.3; }
+
+.file tr .line-number, .file tr .code pre code { max-height: calc(15.6px); =
+}
+
+.left-column, .file td:first-child { text-align: right; color: rgb(170, 170=
+, 170); width: 8ex; }
+
+.results td { padding: 0.1rem 0.5rem; }
+
+.results a { cursor: pointer; display: inline-block; }
+
+.file a:target { background-color: gray; color: white; padding: 0px 0.5rem;=
+ }
+
+.results code { white-space: pre; }
+
+.result-head td { padding-top: 0.3rem; padding-bottom: 0px; }
+
+.result-head td.left-column { padding-right: 0.2rem; }
+
+.result-head a { display: inline; }
+
+.result-context { font-style: italic; margin-left: 10px; padding-left: 4px;=
+ padding-right: 4px; color: royalblue; }
+
+.section { text-align: right; font-size: 150%; }
+
+.result-pathkind { font-size: 150%; }
+
+.result-kind { font-size: 12px; font-weight: 800; }
+
+.expando { cursor: pointer; color: black; }
+
+.file td { padding: 0px; }
+
+.file pre { margin: 0px; }
+
+.context-menu { position: absolute; background-color: rgb(255, 255, 255); m=
+argin: 0px; padding: 0px; border: 1px solid rgb(51, 51, 51); border-radius:=
+ 0px 6px 6px; width: auto; list-style: none; z-index: 102; }
+
+.context-menu a { display: block; text-decoration: none; }
+
+.context-menu li:first-child a:hover { border-top-right-radius: 6px; }
+
+.context-menu li:last-child a:hover { border-bottom-right-radius: 6px; bord=
+er-bottom-left-radius: 6px; }
+
+.content { padding: 1rem 2rem; }
+
+.content.source-listing { padding: 0.5rem 0rem; }
+
+.path-separator { margin: 0px 0.2rem; }
+
+.breadcrumbs { display: inline-block; margin: 0px; padding: 1rem; text-alig=
+n: left; }
+
+.breadcrumbs a:link, .breadcrumbs a:visited, .bubble a:link, .bubble a:visi=
+ted, .result-head a:link, .result-head a:visited { color: rgb(0, 149, 221);=
+ }
+
+.breadcrumbs a:hover, .result-head a:hover { color: rgb(0, 83, 159); }
+
+.breadcrumbs a:focus, .result-head a:focus { color: rgb(0, 83, 159); text-d=
+ecoration: none; }
+
+.footer { color: rgb(153, 153, 153); font-size: 0.7rem; margin: 0px 0px 0px=
+ 1.2rem; }
+
+.panel { position: fixed; top: 105px; right: 22px; background-color: rgb(25=
+5, 255, 255); border-width: 1px 0px 1px 1px; border-top-style: solid; borde=
+r-bottom-style: solid; border-left-style: solid; border-top-color: rgb(224,=
+ 224, 224); border-bottom-color: rgb(224, 224, 224); border-left-color: rgb=
+(224, 224, 224); border-image: initial; border-right-style: initial; border=
+-right-color: initial; min-width: 12rem; overflow: hidden auto; max-height:=
+ calc(100% - 150px); z-index: 102; }
+
+#panel-toggle { display: inline-block; background-color: rgb(51, 51, 51); c=
+olor: rgb(255, 255, 255); margin: 0px; padding: 0.5rem 0.2rem 0.5rem 0.7rem=
+; border: 0px; width: 100%; text-align: left; cursor: pointer; }
+
+.navpanel-icon { display: inline-block; margin-right: 0.5rem; transform: ro=
+tate(-90deg); transition: all 0.1s ease 0s; }
+
+.navpanel-icon.expanded { transform: rotate(0deg); transition: all 0.1s eas=
+e 0s; }
+
+.navpanel-icon::before { font-family: icons; content: "=EE=A0=81"; speak: n=
+one; }
+
+.panel h4 { margin: 0px; padding: 0.5rem; }
+
+.panel ul { margin: 0px; padding: 0px; list-style: none; }
+
+.panel a.class { background-position: 4px 8px; }
+
+.panel a.method { background-position: 4px 6px; }
+
+.panel a.field { background-position: 2px 10px; }
+
+.panel section a { display: inline-block; background-color: rgb(255, 255, 2=
+55); width: 100%; }
+
+.panel section a:hover { background-color: rgb(224, 224, 224); text-decorat=
+ion: none; }
+
+.panel section a:focus { background-color: rgb(224, 224, 224); text-decorat=
+ion: underline; }
+
+.info-box { border: 1px solid gray; border-radius: 8px; padding: 0.8rem; ma=
+rgin: 0.5rem; font-size: 110%; }
+
+.info-box-error { background-color: rgb(255, 238, 238); }
+
+.info-box-warning { background-color: rgb(255, 255, 238); }
+
+.info-box-info { background-color: rgb(238, 255, 238); }
+
+.info-box ul { margin: 0px; padding-inline-start: 20px !important; }
+
+.info-box a { text-decoration: underline !important; }
+
+.info-box .test-skip-info { font-family: monospace; background-color: rgb(2=
+38, 238, 238); padding: 5px; margin: -5px; }
+
+.no-results { clear: both; font-style: italic; }
+
+#fetch-results { display: none; }
+
+span[data-symbols]:hover { cursor: pointer; }
+
+span[data-symbols].hovered { background-color: yellow; }
+
+.intro { font: 14px / 1.5 Arial, Helvetica, sans-serif; margin-left: 10%; m=
+argin-right: 10%; margin-bottom: 10%; }
+
+.intro td, .intro th { text-align: center; vertical-align: middle; }
+
+.intro td[yes]::before { content: "=E2=9C=93"; }
+
+.intro td a { text-decoration: underline; }
+
+.goto { scroll-margin-top: calc((var(--nesting-level, -1) + 1) * 12px * 1.3=
+); }
+
+.nesting-container > .goto { scroll-margin-top: calc(var(--nesting-level) *=
+ 12px * 1.3); }
+
+.blame-strip { display: block; width: 20px; height: 16px; padding: 0px; mar=
+gin: 0px; touch-action: pinch-zoom; }
+
+.c1 { background: var(--blame-c1); }
+
+.c2 { background: var(--blame-c2); }
+
+.blame-popup { position: absolute; top: 0px; left: 0px; width: 600px; paddi=
+ng: 10px; background: rgb(64, 64, 64); box-shadow: grey 3px 3px 3px; border=
+-radius: 3px; color: white; text-align: left; z-index: 200; cursor: auto; }
+
+.blame-popup a { text-decoration: underline; cursor: pointer; }
+
+.deemphasize { color: rgb(140, 140, 140) !important; }
+
+.minus-line { background-color: rgb(255, 204, 204); }
+
+.plus-line { background-color: rgb(153, 204, 255); }
+
+fieldset { position: relative; margin: 0px; padding: 0px; border: 0px; }
+
+input, select { padding: 0.5em; }
+
+input[type=3D"checkbox"] { }
+
+#search-box #query { width: 100%; }
+
+#search-box #path { width: 100%; }
+
+#query { padding-right: 40px; }
+
+.access-key { text-decoration: underline; }
+
+.search-box { background-color: rgb(245, 245, 245); background-image: linea=
+r-gradient(rgb(248, 248, 248), rgb(234, 234, 234)); border-bottom: 1px soli=
+d rgb(109, 109, 109); border-top: 1px solid rgb(245, 245, 245); color: rgb(=
+51, 51, 51); padding: 0.8rem; width: 100%; }
+
+body.old-rev #fixed-header .search-box { padding-bottom: 0.4rem; }
+
+#revision { padding-top: 0.2rem; color: rgb(101, 101, 101); }
+
+#revision a { text-decoration: underline; cursor: pointer; }
+
+.h-flex-container { display: flex; flex-direction: row; align-items: center=
+; }
+
+.v-flex-container { display: flex; flex-direction: column; }
+
+#query-section { flex: 6 1 0%; position: relative; }
+
+#option-section { flex: 0 0 auto; justify-content: center; padding: 0px 2re=
+m 0px 0px; }
+
+#path-section { flex: 3 1 0%; }
+
+.visually-hidden { position: absolute; clip: rect(1px, 1px, 1px, 1px); padd=
+ing: 0px; border: 0px; height: 1px; width: 1px; overflow: hidden; }
+
+.bubble { border: 1px solid rgb(204, 204, 204); border-radius: 9px; color: =
+rgb(108, 108, 108); display: none; font-size: 85%; padding: 0.1rem 30px 0.1=
+rem 34px; position: absolute; top: 0.25rem; }
+
+.bubble::before { content: ""; position: absolute; border-style: solid; bor=
+der-color: rgb(204, 204, 204) transparent; display: block; width: 0px; inse=
+t: -9px auto auto 11px; border-width: 0px 9px 9px; }
+
+.bubble::after { content: ""; position: absolute; border-style: solid; bord=
+er-color: rgb(255, 255, 255) transparent; display: block; width: 0px; inset=
+: -8px auto auto 11px; border-width: 0px 9px 9px; }
+
+.bubble.info { background: url("/static/images/info.gif") 12px 0px / 3ex no=
+-repeat white; }
+
+.bubble.warning { background: url("/static/images/warning.gif") 10px -2px /=
+ 3.5ex no-repeat white; }
+
+.bubble.error { background: url("/static/images/error.gif") 12px 0px / 3ex =
+no-repeat white; }
+
+.zero-size-container { position: relative; height: 0px; width: 100%; }
+
+@media only screen and (min-width: 740px) {
+  .bubble { margin-right: 16%; }
+  .basic_search { right: 13%; }
+}
+
+@media only screen and (min-device-width: 320px) {
+  .bubble { margin-right: 38%; }
+  input[type=3D"submit"] { margin-right: 14%; }
+  .basic_search { top: 11%; left: 13px; text-align: left; }
+}
+
+.svg-preview > h4 { margin-bottom: 0px; }
+
+.svg-preview > a { display: block; }
+
+.svg-preview > a > img { float: left; clear: both; min-height: 50px; max-he=
+ight: 300px; min-width: 50px; max-width: 300px; box-sizing: content-box; bo=
+rder: 1px dashed rgb(85, 85, 85); margin-top: 1em; margin-bottom: 1em; }
+
+#svg-preview-checkerboard { margin-inline-start: 0px; }
+
+#svg-preview-checkerboard:checked + label + a > img { background-image: lin=
+ear-gradient(45deg, rgb(85, 85, 85) 25%, transparent 25%, transparent 75%, =
+rgb(85, 85, 85) 75%, rgb(85, 85, 85) 100%), linear-gradient(45deg, rgb(85, =
+85, 85) 25%, transparent 25%, transparent 75%, rgb(85, 85, 85) 75%, rgb(85,=
+ 85, 85) 100%); background-size: 10px 10px; background-position: 0px 0px, 5=
+px 5px; }
+
+.syn_type { color: teal; }
+
+.syn_def { font-weight: 600; }
+
+.syn_string { color: green; }
+
+.syn_comment { color: darkred; }
+
+.syn_tag, .syn_reserved { color: blue; }
+
+.syn_regex { color: rgb(109, 123, 141); }
+
+#panel-theme-style-select, #panel-theme-color-select { padding: 0px; font-s=
+ize: 80%; }
+
+.panel-theme { padding: 0.5rem; margin-left: 0.5rem; }
+
+:root { --cov-strip-width: 5px; --cov-log10-base: 3px; --cov-log10-scale: 2=
+px; --cov-strip-gap: 3px; --cov-hit-color: #d1e5f0; --cov-miss-color: #f4a5=
+82; }
+
+.cov-strip { display: block; width: 5px; height: 16px; padding: 0px; margin=
+: 0px; touch-action: pinch-zoom; }
+
+.cov-interpolated.cov-miss { background-color: var(--cov-miss-unhovered-col=
+or, #f7f7f7); }
+
+.cov-interpolated.cov-hit { background-color: var(--cov-hit-unhovered-color=
+, #f7f7f7); }
+
+.cov-known.cov-miss { background-color: rgb(244, 165, 130); }
+
+.cov-log10-0, .cov-log10-1 { background-color: var(--cov-hit-unhovered-colo=
+r, #d1e5f0); }
+
+.cov-log10-2, .cov-log10-3 { background-color: var(--cov-hit-unhovered-colo=
+r, #92c5de); }
+
+.cov-log10-4, .cov-log10-5 { background-color: var(--cov-hit-unhovered-colo=
+r, #4393c3); }
+
+.cov-log10-6, .cov-log10-7 { background-color: var(--cov-hit-unhovered-colo=
+r, #2166ac); }
+
+.cov-log10-8, .cov-log10-9 { background-color: var(--cov-hit-unhovered-colo=
+r, #053061); }
+------MultipartBoundary--mxmgcRIi5bLpbeiJ8bAlpefOcW3ciYm8H0BhCh0yDN----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://searchfox.org/static/css/icons.css
+
+@charset "utf-8";
+
+.icon.folder { background: url("/static/icons/mimetypes/folder.png") 0.5em =
+7px no-repeat transparent; padding: 0.5em 0.5em 0.5em 30px; }
+
+.folder-content { clear: both; }
+
+.icon { background-color: transparent; background-position: 0.5em center; b=
+ackground-repeat: no-repeat; background-size: 16px 16px; padding: 0.5em 0.5=
+em 0.5em 30px; }
+
+.icon-container { background-color: transparent; background-repeat: no-repe=
+at; float: right; padding: 8px; }
+
+a.goto-folder { background-image: url("/static/icons/goto_folder.png"); }
+
+a.path-search { background-image: url("/static/icons/path_search.png"); }
+
+a.exclude-path { background-image: url("/static/icons/exclude_path.png"); }
+
+a.class { background-image: url("/static/icons/class.png"); }
+
+a.method { background-image: url("/static/icons/method.png"); }
+
+a.field { background-image: url("/static/icons/field.png"); }
+
+a.reference { background-image: url("/static/icons/reference.png"); }
+
+a.search { background-image: url("/static/icons/search.png"); }
+
+a.buglink { background-image: url("/static/icons/buglink.png"); }
+
+a.external_link { background-image: url("/static/icons/external_link.png");=
+ }
+
+a.jump { background-image: url("/static/icons/jump.png"); }
+
+a.members { background-image: url("/static/icons/members.png"); }
+
+a.type { background-image: url("/static/icons/type.png"); }
+
+.panel label.panel-accel { padding: 0.5rem; }
+
+.panel .accel, .panel .copy { font-size: 10px; border-radius: 2px; padding:=
+ 1px 3px; margin: 0px 10px; border: 1px solid rgb(221, 221, 221); }
+
+.panel .accel { font-family: monospace; background: rgb(245, 245, 245); box=
+-shadow: rgb(153, 153, 153) 0px 1px; }
+
+.panel .copy { height: 1em; width: 1em; padding: 3px; margin: 0px 3px; box-=
+sizing: content-box; cursor: pointer; vertical-align: middle; background-im=
+age: url("/static/icons/copy.svg"); background-position: center center; bac=
+kground-color: rgb(245, 245, 245); }
+
+.panel .copy:hover { background-color: white; }
+
+.panel .copy:active { background-color: rgb(213, 213, 213); }
+
+.panel .copy.copied { background-image: url("/static/icons/tick.svg"); }
+
+.enum { background-image: url("/static/icons/enum.png"); }
+
+.struct { background-image: url("/static/icons/struct.png"); }
+
+.union { background-image: url("/static/icons/union.png"); }
+
+.macro { background-image: url("/static/icons/macro.png"); }
+
+.build { background-image: url("/static/icons/mimetypes/build.png"); }
+
+.icon-container.c, .icon.c { background-image: url("/static/icons/mimetypes=
+/c.png"); }
+
+.conf { background-image: url("/static/icons/mimetypes/conf.png"); }
+
+.cpp { background-image: url("/static/icons/mimetypes/cpp.png"); }
+
+.cs { background-image: url("/static/icons/mimetypes/cs.png"); }
+
+.css { background-image: url("/static/icons/mimetypes/css.png"); }
+
+.results .diff, .folder-content .diff { background-image: url("/static/icon=
+s/mimetypes/diff.png"); }
+
+.h { background-image: url("/static/icons/mimetypes/h.png"); }
+
+.html { background-image: url("/static/icons/mimetypes/html.png"); }
+
+.iso { background-image: url("/static/icons/mimetypes/iso.png"); }
+
+.image { background-image: url("/static/icons/mimetypes/image.png"); }
+
+.java { background-image: url("/static/icons/mimetypes/java.png"); }
+
+.js { background-image: url("/static/icons/mimetypes/js.png"); }
+
+.mm { background-image: url("/static/icons/mimetypes/mm.png"); }
+
+.page_white_code_red { background-image: url("/static/icons/mimetypes/page_=
+white_code_red.png"); }
+
+.php { background-image: url("/static/icons/mimetypes/php.png"); }
+
+.py { background-image: url("/static/icons/mimetypes/py.png"); }
+
+.rb { background-image: url("/static/icons/mimetypes/rb.png"); }
+
+.sh { background-image: url("/static/icons/mimetypes/sh.png"); }
+
+.svg { background-image: url("/static/icons/mimetypes/svg.png"); }
+
+.tex { background-image: url("/static/icons/mimetypes/tex.png"); }
+
+.txt { background-image: url("/static/icons/mimetypes/txt.png"); }
+
+.ui { background-image: url("/static/icons/mimetypes/ui.png"); }
+
+.unknown { background-image: url("/static/icons/mimetypes/unknown.png"); }
+
+.vs { background-image: url("/static/icons/mimetypes/vs.png"); }
+
+.xml { background-image: url("/static/icons/mimetypes/xml.png"); }
+------MultipartBoundary--mxmgcRIi5bLpbeiJ8bAlpefOcW3ciYm8H0BhCh0yDN----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://searchfox.org/static/icons/search.png
+
+iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAYAAADFeBvrAAAAAXNSR0IArs4c6QAACrZJREFUaAXV
+Wl+IVccZnzl33V2vrrq6Utck7UN8kICBQIIG8hAfTDE0sVI01N0NTStrU+pDpbQEqYgghVTsQx5s
+rKVFu5I2iDWkaU0oKyktFg0GCiLFl7TqrnV1d91Gd+89Z6a/3zcz55577r37r+42ObCeO3Pmz/f7
+ft/3zTczavUAHvvX7y2cuDa6SVm1URm1ViVqjTG2XVvVZo1VNlFjythhZfRVa9QVndj+4heWf6C3
+//T+A5i+aghdVZpBwb77anu5PLHFGr3FWvucTWwRAisIDgACQgGgUvxtlNL45sChkmWr71lj3tdJ
+4cyiZOEZ/dqR4RlM37DpjAHZi73FeMDusYn5gUlsG4WHcA4EwIAdAQJWPCC8WA8Q/GP77G+CVVaP
+Rca+vnjlwsN619F7qJn1M21A1v62UP79+9+yVu23senMCuWYqAguYASEA8rveSDSh6xlAILNAWv1
+/qXrXviF3r6dKpnxMy1A9k/ffigeL//OxPZJmlXWdETrVQxAhsBGYExYqIAiCGEmtMuA4jet9MXm
+KPpq8eDx6zNFNCWg0tne9bZsTsPEqlipmBn9AxiCUJ6NUJe2o74J0JsnvxOUMJQyCHHSOj1QUHrr
+0kMn/jYTUNFkjeM/7OxW5fgcTKGTAgTNh0mDb/CNiCYCBxOi2Ukg8EDd98oYWTD0O7aVABIUAwUm
+ZXPuzne7uieTMf+tIUMTBJPYE5wkmFkAEoA508sIybYCzGvesyBseEEDIzIm6oJSKmNnWXLjRDbq
+WX6k79d54euV6wKimak4OQcttwaNVyZ0AJxgFacGAyW070e7d4xRlxfoBTda8MdJJ8b/s7pcilZD
+M4+ZRL2IdWgjTLRZxqzxv0zID+Zn9LhShWc7jk5tfjWAXACILxgfySRiUfGiTecvVSCtGlSJPlBc
+tLhPd79xt57W8nV2/+4lo2a4C/32YZ5VBCbrF95VvuUBiR8aNaCbFzzV8bPJA0UVIBeaz56HwIhm
+ACETVcwn1BFQZPUEzPFga0vHYf3yoU/zQk+nbH/Ss2jklt2Dcfci6LTIfPCnrBnKnF6ZmPPiiq9s
+3TBZSK8CVHp3Zy+EfVMGlKgEsehCGNBpLjWHQa2bthZfOXZ+OoJP1WZ0T9eGJFGnTWJWpRkFlUkZ
+vHUQGFkEW7tWnnzraKMxU0DMAErXk6vo2Bk0FEzLldHUsfZ33Vx4vth97FqjQWdTf29318P3jX0P
+INZl53dWQq26+fF9YOWyJWv00foZRRq244EE1NtOgkj/vMmlIdXYwbkAQwUU3+i7piL9PJLawfz8
+aURMDM2x8+bQyJ5GShOGmGiWyqVPMFBbNcW0Z3QVk9MTNrLPFl/51QMxs0YC3d7ZtcGYBGufavEW
+4RZfsQ6aPkRO7FjLoqYvLTt5siahFYZc1oxEMxtCOYBniwNDcwfnGgxBrjjWd16Z6CAVSd+lDAIs
+80Y+2XZ/rLylnlIEkGwBMh04gPwhTZHBEJqLiGb1BpiLuo6OwmFYyiDDdSpLkAlvG4OpRNcHxM0Z
+mHku2zEwE95cZ2YbmmcDWB868SlkOhDmF5Yk2tEF+AM4E+zBtm1bmB8/kp1morA5qzaxADBSusRF
+M99xrstNuqkPgpdSlvwy4qIeZjeqeHNEbcrLEaHTxqzvCDDSKyYo607/dDOA/OD/S3lFX99dyNJP
+P3Iy5fwJ9aasN+bniNB4baBWOvoBXJqP5sjN8p3mrRxjbloOFRzWIV+WlCyxa/OyNMHB1pBWRDHR
+RNiv0E7JXMHqy/lO81U2GnNTLii5yopCBqHUmrwsEUJgOxmS/Q47BobQiTFf+4w533E+yk3a3hDr
+8Qxl/AdyQoLYtOflaIIGsP6g2lPJt/vtGGspuC1AvuN8lG2TuZGXJ/iUZA9Gt+XloA85U8u8U5ZY
+1zqOxeD/86wcbzc0tdTcJNL5tVGsysZ5ySIgHhMbpblV+RHDuFJjI3FnvtN8le9M3F0hGTcU60yP
+VkO3gASsM3ooL0sE38GJpmsQkkAXslkH35KdZr7b/JRLcdLJ4BRAVSIdKonNmFpAyAKuBrsMpuaY
+8prAtnl+xK+dBWd0GxwTlJ6MUCb/W0xO38r3ihAQrkhj37DCFppiEFO2L+Y7zVs5Mc8EAJRFInGw
+Jifvx3lZIm1tv9DqG5It2qj8iU/ZjTwDyHec6/LtzV1LoOzNQcGUp8qSmLjG6sO8HJHcAhgcnBMx
+/rLnZ247rJpHYxxozPNTGpvohkyLCSjLUlhi4FdmUTH6S16siFcavAVwmQHt1Nsq2HFsEajexwON
+fOe5KtvNu1sSwwuB4DOV4zIBR3aUurD8o7dH8zLIfkibwpkQCisRDjYLLKIhY1aN3MTpzDw9N+4O
+/hAMPJpm2s70RRYnDwTTuu5BiQDi/QyvNIK9MkwG7QR/AoN7eToz15huPP31tbgUeK12fs8SlazV
+SNPCFW/Vk8UxxMsma1/nIMHxAjjHEqk3LXGsTvN0pt5AD6IOG7Zmk5ROwkpaw/zOFbzpEQweraJf
+rv5oilOfJbxs4ukkElIX770/MViIX5E1s2ocR0235wAUwVz7pz0CH34iZAPiz35+icQOzfCC1ujH
+gqzOP8KQtMPNGWLc/pD+CDN0Sg8maAwMrrMT5gJPZ+qMN6sqmtn1T+x5MPNNUSbmFAB5MKgGO3s7
+L71ds6CGiVNArJCbM6Mviv16IPW2FdhDrULace72N3b8yPbMPvoxml1/ets+Y8uXEGmFmTBfsIqU
+GQqo9aVHXlr3Jn82emoy6Xt7X35o/L65gAnkgovgAjtkixOGOmHT6kFcGh/gGYBsmxvNlKnnojnu
+1hmeaz8aImwY14HBvN5nKl31aBTpLz9y+VTDS7AaQOw8+v2e9XHJnIMtp9cpzhQr64EDSWdFB4K0
+tqRj3Q8h3om40+TmDPuZlVjF7owWOphoMjczZfMMJt2MfosdgKyP+o2mjFeBUf1rclB1AXEA3pwB
+xAlGPTEDzwxZEgCspxI9oKBVV3ZCsi6NmtQ2lwNZU7L9KoDS72w76dMYVENAHO/Oq13duBb8ObTe
+ygW3iqW6AqKSq7isY9RAhVHpS/BsImaMdgAXFBKA1ppZI2T1QU0KiEMN9fast6X4NCb0l8ZeiFQw
+NBL2+CZoVw4s8p3+FrA5xfB7GAvvmT21oKqiXL3BeA2ozYKnkIZcrNKoaBk9BAwkkXelXOXgvi3r
+Qn14p/2zYBDNEH5q8rRa+exSnFad/ddjX1sfvk0JiA07jh+/3vECbs6U3oWFd4BC0KyqQNA3KBS/
+Zf6ygkv79JtrL6YWwGg1rHX0nS++9PiTjGazATWlyUG8qsf29hZv/ntkDwKC+68xEFBCuRdUAJAJ
+b14CjrILOxiKwgtjLiORMnIzpjPMALKLJjVPBtBpaZUQ9QrM7wotj88YUBhrZMeO9vsjZfzHJb1F
+47AfCaWcjwd2nC9B+nxk8+DANFVwgVkzE81GudmMQCl9ataAAjC+eQtwc0htMhZnzTieRaheA5Dt
+uN5vwztWNhrCbfcQ/PAWrvU/joz6kJuzevuZ7LjhtwOFPZtSk++cabKh02f9PU2mxqYVFD4LYJnu
+TBkotP7z54ahoFRhypo/IpgsC3V8a63uRbb5ic8NQ0F4MsVoBginsJcYRv0Y0LxHMA9f+c0//gtz
+9tR788rKkQAAAABJRU5ErkJggg==
+
+------MultipartBoundary--mxmgcRIi5bLpbeiJ8bAlpefOcW3ciYm8H0BhCh0yDN----
+Content-Type: image/svg+xml
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://searchfox.org/static/icons/copy.svg
+
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/.
+
+   Taken from mozilla-central@fc6d20cf008c2ca66d2c45439690d2ff067bf1b9/brow=
+ser/extensions/screenshots/icons/copy.svg
+   -->
+<svg xmlns=3D"http://www.w3.org/2000/svg" width=3D"16" height=3D"16"><path =
+fill=3D"#3e3d40" d=3D"M14.707 8.293l-3-3A1 1 0 0 0 11 5h-1V4a1 1 0 0 0-.293=
+-.707l-3-3A1 1 0 0 0 6 0H3a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h3v3a2 2 0 0 0 2 2h=
+5a2 2 0 0 0 2-2V9a1 1 0 0 0-.293-.707zM12.586 9H11V7.414zm-5-5H6V2.414zM6 7=
+v2H3V2h2v2.5a.5.5 0 0 0 .5.5H8a2 2 0 0 0-2 2zm2 7V7h2v2.5a.5.5 0 0 0 .5.5H1=
+3v4z"/></svg>=0A
+------MultipartBoundary--mxmgcRIi5bLpbeiJ8bAlpefOcW3ciYm8H0BhCh0yDN----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://searchfox.org/static/css/filter.css
+
+@charset "utf-8";
+
+@font-face { font-family: icons; src: url("/static/fonts/icons.eot?#iefix20=
+13") format("embedded-opentype"), url("/static/fonts/icons.woff?2013") form=
+at("woff"), url("/static/fonts/icons.ttf?2013") format("truetype"); font-we=
+ight: normal; font-style: normal; }
+
+.in-progress #spinner { background: url("/static/images/spinner-large.gif")=
+ 0px 0px / contain no-repeat transparent; }
+
+#spinner { display: inline-block; position: absolute; top: 10px; right: 10p=
+x; padding-left: 2rem; width: auto; bottom: 10px; }
+------MultipartBoundary--mxmgcRIi5bLpbeiJ8bAlpefOcW3ciYm8H0BhCh0yDN----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://searchfox.org/static/css/xcode.css
+
+@charset "utf-8";
+
+.hljs { display: block; overflow-x: auto; padding: 0.5em; background: rgb(2=
+55, 255, 255); color: black; text-size-adjust: none; }
+
+.hljs-comment, .hljs-javadoc { color: rgb(0, 106, 0); }
+
+.hljs-keyword, .hljs-literal, .nginx .hljs-title { color: rgb(170, 13, 145)=
+; }
+
+.method, .hljs-list .hljs-title, .hljs-tag .hljs-title, .setting .hljs-valu=
+e, .hljs-winutils, .tex .hljs-command, .http .hljs-title, .hljs-request, .h=
+ljs-status { color: rgb(0, 0, 136); }
+
+.hljs-envvar, .tex .hljs-special { color: rgb(102, 102, 0); }
+
+.hljs-string { color: rgb(196, 26, 22); }
+
+.hljs-tag .hljs-value, .hljs-cdata, .hljs-filter .hljs-argument, .hljs-attr=
+_selector, .apache .hljs-cbracket, .hljs-date, .hljs-regexp { color: rgb(0,=
+ 136, 0); }
+
+.hljs-sub .hljs-identifier, .hljs-pi, .hljs-tag, .hljs-tag .hljs-keyword, .=
+hljs-decorator, .ini .hljs-title, .hljs-shebang, .hljs-prompt, .hljs-hexcol=
+or, .hljs-rules .hljs-value, .hljs-symbol, .hljs-symbol .hljs-string, .hljs=
+-number, .css .hljs-function, .hljs-function .hljs-title, .coffeescript .hl=
+js-attribute { color: rgb(28, 0, 207); }
+
+.hljs-class .hljs-title, .smalltalk .hljs-class, .hljs-javadoctag, .hljs-ya=
+rdoctag, .hljs-phpdoc, .hljs-dartdoc, .hljs-type, .hljs-typename, .hljs-tag=
+ .hljs-attribute, .hljs-doctype, .hljs-class .hljs-id, .hljs-built_in, .set=
+ting, .hljs-params, .clojure .hljs-attribute { color: rgb(92, 38, 153); }
+
+.hljs-variable { color: rgb(63, 110, 116); }
+
+.css .hljs-tag, .hljs-rules .hljs-property, .hljs-pseudo, .hljs-subst { col=
+or: rgb(0, 0, 0); }
+
+.css .hljs-class, .css .hljs-id { color: rgb(155, 112, 63); }
+
+.hljs-value .hljs-important { color: rgb(255, 119, 0); font-weight: bold; }
+
+.hljs-rules .hljs-keyword { color: rgb(197, 175, 117); }
+
+.hljs-annotation, .apache .hljs-sqbracket, .nginx .hljs-built_in { color: r=
+gb(155, 133, 157); }
+
+.hljs-preprocessor, .hljs-preprocessor *, .hljs-pragma { color: rgb(100, 56=
+, 32); }
+
+.tex .hljs-formula { background-color: rgb(238, 238, 238); font-style: ital=
+ic; }
+
+.diff .hljs-header, .hljs-chunk { color: rgb(128, 128, 128); font-weight: b=
+old; }
+
+.diff .hljs-change { background-color: rgb(188, 207, 249); }
+
+.hljs-addition { background-color: rgb(186, 238, 186); }
+
+.hljs-deletion { background-color: rgb(255, 200, 189); }
+
+.hljs-comment .hljs-yardoctag { font-weight: bold; }
+
+.method .hljs-id { color: rgb(0, 0, 0); }
+------MultipartBoundary--mxmgcRIi5bLpbeiJ8bAlpefOcW3ciYm8H0BhCh0yDN------

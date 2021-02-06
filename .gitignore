@@ -1,0 +1,6 @@
+.python-version
+.cache/
+*.pyc
+__pycache__/
+localhost.crt
+localhost.key

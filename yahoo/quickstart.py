@@ -61,31 +61,18 @@ def test_api_request():
 
 @app.route('/authorize')
 def authorize():
-  # Create flow instance to manage the OAuth 2.0 Authorization Grant Flow steps.
-  flow = google_auth_oauthlib.flow.Flow.from_client_secrets_file(
-      CLIENT_SECRETS_FILE, scopes=SCOPES)
+  url = "https://api.login.yahoo.com/oauth2/request_auth?client_id=dj0yJmk9NUtCTWFMNVpTaVJmJmQ9WVdrOVJ6UjVTa2xJTXpRbWNHbzlNQS0tJnM9Y29uc3VtZXJzZWNyZXQmeD0yYw--&redirect_uri=oob&response_type=code&language=en-us"
 
-  # The URI created here must exactly match one of the authorized redirect URIs
-  # for the OAuth 2.0 client, which you configured in the API Console. If this
-  # value doesn't match an authorized URI, you will get a 'redirect_uri_mismatch'
-  # error.
-  flow.redirect_uri = flask.url_for('oauth2callback', _external=True)
+  # response = requests.request("GET", url)
 
-  authorization_url, state = flow.authorization_url(
-      # Enable offline access so that you can refresh an access token without
-      # re-prompting the user for permission. Recommended for web server apps.
-      access_type='offline',
-      # Enable incremental authorization. Recommended as a best practice.
-      include_granted_scopes='true')
+  # print(response.text)
 
-  # Store the state so the callback can verify the auth server response.
-  flask.session['state'] = state
-
-  return flask.redirect(authorization_url)
+  return flask.redirect(url)
 
 
 @app.route('/oauth2callback')
 def oauth2callback():
+  print('authcallback!')
   # Specify the state when creating the flow in the callback so that it can
   # verified in the authorization server response.
   state = flask.session['state']
@@ -165,6 +152,19 @@ def print_index_table():
           '</td></tr></table>')
 
 
+from base64 import b64encode
+def generate_nonce(length=16):
+   """ Generates a random string of bytes, base64 encoded """
+   if length < 1:
+      return ''
+   string=b64encode(os.urandom(length),altchars=b'-_')
+   b64len=length
+   if length%3 == 1:
+      b64len+=2
+   elif length%3 == 2:
+      b64len+=3
+   return string[0:b64len].decode()
+
 if __name__ == '__main__':
   # When running locally, disable OAuthlib's HTTPs verification.
   # ACTION ITEM for developers:
@@ -175,3 +175,7 @@ if __name__ == '__main__':
   # for your API project in the Google API Console.
   ssl_dir = Path(__file__).resolve().parent.parent
   app.run('localhost', 8080, debug=True, ssl_context=(ssl_dir / 'localhost.crt', ssl_dir / 'localhost.key'))
+
+  # print('yo')
+  # print(generate_nonce())
+  
