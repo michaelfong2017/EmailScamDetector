@@ -24,6 +24,9 @@ app = flask.Flask(__name__)
 # key. See https://flask.palletsprojects.com/quickstart/#sessions.
 app.secret_key = '7_pvJ5lf6PxF4IK3AxLoVi_l'
 
+# UTF-8 json dump
+app.config['JSON_AS_ASCII'] = False
+
 
 @app.route('/')
 def index():
@@ -42,15 +45,8 @@ def test_api_request():
   service = googleapiclient.discovery.build(API_SERVICE_NAME, API_VERSION, credentials=credentials)
 
   # Call the Gmail API
-  results = service.users().labels().list(userId='me').execute()
-  labels = results.get('labels', [])
-
-  if not labels:
-    print('No labels found.')
-  else:
-    print('Labels:')
-    for label in labels:
-        print(label['name'])
+  user_id = 'me'
+  threads = service.users().threads().list(userId=user_id).execute().get('threads', [])
 
 
   # Save credentials back to session in case access token was refreshed.
@@ -58,7 +54,7 @@ def test_api_request():
   #              credentials in a persistent database instead.
   flask.session['credentials'] = credentials_to_dict(credentials)
 
-  return flask.jsonify(labels)
+  return flask.jsonify(threads)
 
 
 @app.route('/authorize')
