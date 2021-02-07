@@ -174,4 +174,4 @@ if __name__ == '__main__':
   # Specify a hostname and port that are set as a valid redirect URI
   # for your API project in the Google API Console.
   ssl_dir = Path(__file__).resolve().parent.parent
-  app.run('localhost', 8080, debug=True, ssl_context=(ssl_dir / 'localhost.crt', ssl_dir / 'localhost.key'))
+  app.run('localhost', 8443, debug=True, ssl_context=(ssl_dir / 'localhost.crt', ssl_dir / 'localhost.key'))
