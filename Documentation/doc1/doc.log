@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.3.15)  29 MAR 2021 23:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.3.15)  30 MAR 2021 01:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -258,37 +258,46 @@ Underfull \hbox (badness 10000) in paragraph at lines 59--62
 
  []
 
+<roundcube.png, id=4, 1284.8pt x 644.4075pt>
+File: roundcube.png Graphic file (type png)
+<use roundcube.png>
+Package pdftex.def Info: roundcube.png  used on input line 64.
+(pdftex.def)             Requested size: 505.89pt x 253.7368pt.
 [1
 
-{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 116.
+{/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./round
+cube.png>] [2]
+Underfull \hbox (badness 10000) in paragraph at lines 103--106
 
-[2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 116.
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 126.
+[3]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 126.
  (./doc.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 116.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 116.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 126.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 126.
 Package rerunfilecheck Info: File `doc.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 116.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 126.
  ) 
 Here is how much of TeX's memory you used:
- 5367 strings out of 480608
- 83178 string characters out of 5903630
- 346889 words of memory out of 5000000
- 21178 multiletter control sequences out of 15000+600000
+ 5377 strings out of 480608
+ 83309 string characters out of 5903630
+ 347889 words of memory out of 5000000
+ 21185 multiletter control sequences out of 15000+600000
  534801 words of font info for 32 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 34i,4n,29p,976b,375s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,4n,29p,976b,309s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 }</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
 usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></us
 r/local/texlive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on doc.pdf (2 pages, 58900 bytes).
+Output written on doc.pdf (3 pages, 286377 bytes).
 PDF statistics:
- 46 PDF objects out of 1000 (max. 8388607)
- 37 compressed objects within 1 object stream
- 12 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 55 PDF objects out of 1000 (max. 8388607)
+ 43 compressed objects within 1 object stream
+ 14 named destinations out of 1000 (max. 500000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

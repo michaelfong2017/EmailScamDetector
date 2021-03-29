@@ -56,9 +56,15 @@
 \end{center}
 
 \section*{\large{1 \hspace{10pt} Overview}}
-Mailu is used in EGuard's prototype as the mail server since Mailu is open source, easy-to-install and full-featured. A Linux machine is used to host the mail server since Linux is open source, flexible, secure and reliable for running servers. \\
+EGuard is a scam detection solution which alerts users to possible scams. At the current stage, a warning banner has been developed to alert users to unrecognized email sender addresses. \\
 \\
-Live demo: \href{https://mail.michaelfong.co}{https://mail.michaelfong.co}
+Mailu is used in EGuard's prototype as the mail server since Mailu is open source, easy-to-install and full-featured. A Linux machine is used to host the mail server since Linux is open source, flexible, secure and reliable for running servers.
+
+\begin{center}
+	\includegraphics[width=1\columnwidth]{roundcube} % Example image
+\end{center}
+
+\noindent{Live demo: \href{https://mail.michaelfong.co}{https://mail.michaelfong.co}}
 
 \section*{\large{2 \hspace{10pt} Architecture}}
 \subsection*{2.1 \hspace{10pt} Mailu}
@@ -73,14 +79,14 @@ A webmail is a web-based service that allows users to access their emails. Inter
 \section*{\large{3 \hspace{10pt} Implementations}}
 
 \subsection*{3.1 \hspace{10pt} Docker and Docker Compose}
-Docker deployment ensures compatibility, consistency and easy upgrades of the EGuard mail server.
+Docker deployment ensures compatibility, consistency and easy upgrades of the EGuard mail system.
 \begin{itemize}
 
-\item Compatibility: The EGuard mail server works on any linux machines that support Docker. No other packages or installation are required other than pulling the set of EGuard docker images and running the docker containers. There are no worries that EGuard requires packages unsupported by the host machine.
+\item Compatibility: The EGuard mail system works on any linux machines that support Docker. No other packages or installation are required other than pulling the set of EGuard docker images and running the docker containers. There are no worries that EGuard requires packages unsupported by the host machine.
 
-\item Consistency: Each docker container is an isolated environment. There are no dependency conflicts between the application inside a container and applications outside the container. Misconfiguration is avoided since the entire environment is set up consistently and automatically by running the set of pre-configured docker images. All host machines run the EGuard mail server with the same configurations by default. A utility is being developed for users to generate their own configurations.
+\item Consistency: Each docker container is an isolated environment. There are no dependency conflicts between the application inside a container and applications outside the container. Misconfiguration is avoided since the entire environment is set up consistently and automatically by running the set of pre-configured docker images. All host machines run the EGuard mail system with the same configurations by default. A utility is being developed for users to generate their own configurations.
 
-\item Easy upgrades: When a new version of the EGuard mail server is available, changes are committed to the docker images and pushed to remote repositories. Users can upgrade and downgrade their docker images freely without losing their emails and data as emails and user data are persistently stored in their linux machine outside the docker containers.
+\item Easy upgrades: When a new version of the EGuard mail system is available, changes are committed to the docker images and pushed to remote repositories. Users can upgrade and downgrade their docker images freely without losing their emails and data as emails and user data are persistently stored in their linux machine outside the docker containers.
 
 \end{itemize}
 
@@ -93,8 +99,12 @@ EGuard mail server is hosted on the user's linux machine, which persistently sto
 \subsection*{3.3 \hspace{10pt} Roundcube Plugin}
 Roundcube is an open source webmail client, where plugins can be developed in php and javascript and installed. There is an existing plugin that displays a warning banner if an email sender address does not match a customizable regular expression. Nonetheless, it is not implemented to communicate with a list of recognized sender addresses stored outside of Roundcube and there is no way to update the list on-the-fly inside Roundcube. Therefore, a plugin is being developed on top of the warning banner plugin to implement the client-server communication between Roundcube and the linux machine and implement the user interfaces.
 
+\section*{\large{4 \hspace{10pt} Variations}}
+Mailu acts as a backbone of the EGuard mail system for the prototype being developed. Nonetheless, components of Mailu can be replaced by other services independently. Minimally, EGuard can be deployed to existing mail systems as a collection of add-ons, including Roundcube plugins and the EGuard backend for email analysis and scam detection. For mail system that uses email clients other than Roundcube, either the users are encouraged to switch to Roundcube, or new plugins are developed for other email clients to implement the same functions. For users willing to set up a mail system from scratch, either they can use the current Mailu architecture, or a new architecture is assembled based on their needs. Besides, the EGuard backend for email analysis and scam detection is not necessarily deployed in the linux machine hosting the mail server but can also be deployed in another machine as long as a gRPC server can be run. \\
+\\
+At a future stage, more sophisticated email analysis can be done in the EGuard backend. gRPC allows email clients to send emails to the backend for analysis and receive responses.
 
-%\section*{\large{4 \hspace{10pt} References}}
+%\section*{\large{5 \hspace{10pt} References}}
 %\noindent{[1] \href{https://ijcsit.com/docs/Volume\%207/vol7issue5/ijcsit20160705014.pdf}{https://ijcsit.com/docs/Volume\%207/vol7issue5/ijcsit20160705014.pdf}}
 %
 %\noindent{[2] \href{https://openreview.net/pdf?id=ryxyCeHtPB}{https://openreview.net/pdf?id=ryxyCeHtPB}}
